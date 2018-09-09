@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homelab on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <title>Homelab on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/homelab/</link>
-    <description>Recent content in Homelab on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <description>Recent content in Homelab on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
     
