@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <link>https://www.nathancurry.com/blog/</link>
+    <description>Recent content in Blog on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating BIND Config From Ansible hostvars</title>
+      <link>https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/</guid>
+      <description>Since streamlining my container deployment, I&amp;rsquo;ve been working on automating a BIND deployment. I found this excellent role over at MangoLassi.it, and I&amp;rsquo;m tailoring it to my needs.
+Generating based on hostvars For now, I&amp;rsquo;m statically mapping IPs, MAC addresses, and a few other machine facts in host_vars, so that I have a defined infrastructure, even when
+fqdn: &amp;#39;ns.lan.nathancurry.com&amp;#39; ip_address: &amp;#39;10.3.3.2&amp;#39; mac_address: &amp;#39;52:54:00:76:b4:78&amp;#39; services: [ &amp;#39;dns&amp;#39;, &amp;#39;dhcp&amp;#39; ] This allows me to keep key infrastructure facts in one place.</description>
+    </item>
+    
+    <item>
+      <title>Customize a CentOS LXC Container with Proxmox</title>
+      <link>https://www.nathancurry.com/blog/15-customize-lxc-container-template-on-proxmox/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/15-customize-lxc-container-template-on-proxmox/</guid>
+      <description>The CentOS-based container template provided by Proxmox doesn&amp;rsquo;t have SSH installed, which makes it fairly useless for Ansible-based deployments.
+Here are the steps to update and reroll a template:
+Create and connect to the container The web UI is easy and fills out important info for you, but I created it through the CLI using a template I had preloaded.
+root@gold:~# pct create 105 gluster:vztmpl/centos-7-default_20171212_amd64.tar.xz --storage local-lvm --net0 name=eth0,ip=dhcp,ip6=dhcp,bridge=vmbr0 --password=password root@gold:~# pct start 105 root@gold:~# pct console 105 Make desired changes You can do pretty much anything, but keep it simple:</description>
+    </item>
+    
+    <item>
+      <title>Deploying Infrastructure on Proxmox with Ansible</title>
+      <link>https://www.nathancurry.com/blog/14-ansible-deployment-with-proxmox/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/14-ansible-deployment-with-proxmox/</guid>
+      <description>I&amp;rsquo;ve broken down my HomeLab, and I&amp;rsquo;m rebuilding it in Ansible for deployment on a Proxmox cluster.
+Configure Proxmox for ansible I&amp;rsquo;ve been working off morph027&amp;rsquo;s workflow for a first successful run. He uses the ansible plugin proxmox_kvm, and I&amp;rsquo;m using proxmox (for containers).
+Infrastructure Short and sweet:
+[proxmox] gold silver bronze Setup script To get my blood pumping, I wrote a playbook to configure the three nodes:
+# install_pip.</description>
+    </item>
+    
+    <item>
+      <title>Adding a Third Proxmox&#43;Gluster Node</title>
+      <link>https://www.nathancurry.com/blog/13-adding-third-proxmox-gluster-node/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/13-adding-third-proxmox-gluster-node/</guid>
+      <description>I freed up the system I was using to do data recovery is free, and so I&amp;rsquo;m finally adding my third node to my Proxmox+Gluster cluster.
+Install Proxmox Same as before, allocated 8GB for swap, 10GB max for root, and 200GB for extra LVM partitions.
+Create the gluster brick I ran into an issue that I had one fewer available physical extents on this disk due to it being a different model.</description>
+    </item>
+    
+    <item>
+      <title>VLANs with Cisco and Ubiquiti</title>
+      <link>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</guid>
+      <description>My girlfriend is out of town, so now&amp;rsquo;s a great time to set up VLANs.
+The Map I&amp;rsquo;m switching to 10.3.3.0/24, since that&amp;rsquo;s easier to type than 192.168.7.0/24, especially in the dark.
+Private LAN  VLAN 1 10.3.3.0/25 Pool 80-126  Guest WiFi  VLAN 99 10.3.3.128&amp;sol;26 No routing to other subnets  IoT  VLAN 5 10.3.3.208&amp;sol;28 Restricted routes available to other VLANs  DMZ  VLAN 10 10.</description>
+    </item>
+    
+    <item>
+      <title>Proxmox VE 5.2-1 with a GlusterFS Store</title>
+      <link>https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/</link>
+      <pubDate>Tue, 04 Sep 2018 14:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/</guid>
+      <description>I had initially planned on migrating from plain KVM to oVirt. My reasoning was thus:
+ oVirt is the upstream of Red Hat Enterprise Virtualization, and I plan on pursuing higher Red Hat certifications It inegrates with OpenStack, another technology adopted by Red Hat It&amp;rsquo;s robust and flexible  However, upon installing * Documentation for RHEV is complete, but behind a version or two * Documentation for oVirt is poorly maintained, and some documents stop almost mid-sentence * Terraform plugins for oVirt are not ready for primetime * The network management is needlessly ornate</description>
+    </item>
+    
+    <item>
+      <title>Containerized NFS Server on Proxmox VE 5.2-1</title>
+      <link>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</link>
+      <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</guid>
+      <description>I like the flexibility of Proxmox, and this post covers spinning up my first LXC container, an NFS share.
+Preliminary work Before spinning up the systems, there were a few things to do:
+Load template I navigated to the storage (in this case my gluster volume), hit Templates button and added the latest centos-7-default container template. It was downloaded in a matter of seconds
+Set DHCP and DNS Previously, I was generating MAC addressed based on the FQDN of the host, applying them to the VM, and entering them as static leases in my DHCP server.</description>
+    </item>
+    
+    <item>
+      <title>Two-Node GlusterFS on oVirt Node 4.2.5.1</title>
+      <link>https://www.nathancurry.com/blog/09-two-node-glusterfs-on-ovirt/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/09-two-node-glusterfs-on-ovirt/</guid>
+      <description>Generally speaking, you shouldn&amp;rsquo;t configure two nodes in a Gluster, since data divergence is resolved by a vote among the nodes. However, my third bare metal host is currently occupied recovering data from a dying hard drive, so I&amp;rsquo;m doing this for now and adding the third brick later.
+Install oVirt I booted the oVirt 4.2 installer ISO off a flash drive, and made only minor changes.
+I took the suggested partition scheme, but reduced the root partition to 8GiB, and used the spare space for my glusterfs partition, formatting it XFS and mounting it on /glusterfs</description>
+    </item>
+    
+    <item>
+      <title>DNS Dynamic Updates With DNSMasq on Ubiquiti ER-X</title>
+      <link>https://www.nathancurry.com/blog/08-dns-dynamic-updates-on-ubiquiti-erx/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/08-dns-dynamic-updates-on-ubiquiti-erx/</guid>
+      <description>I had previously spun up DNS and DHCP on a CentOS 7 VM, but I&amp;rsquo;m currently blowing out my entire environment to migrate to oVirt. Plus, I&amp;rsquo;ve since gotten a Ubiquiti Edgerouter X, which is a mighty capable device.
+The default DHCP server is ISC dhcpd, and the configuration doesn&amp;rsquo;t update DNS entries (or at least not reliably), so I chose to use dnsmasq
+Prerequisites I never turned on the DHCP server, but you&amp;rsquo;ll have to turn it off.</description>
+    </item>
+    
+    <item>
+      <title>Kerberized NFS with FreeIPA on CentOS 7 and Fedora 28</title>
+      <link>https://www.nathancurry.com/blog/07-kerberized-nfs-with-freeipa-on-centos-7/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/07-kerberized-nfs-with-freeipa-on-centos-7/</guid>
+      <description>I have an NFS server on a KVM guest, and I want to integrate auth into my IdM server so I can have an automount readily accessible from any of the hosts.
+Most of my hosts are CentOS 7, but my personal laptop is running Fedora 28.
+What I&amp;rsquo;ve done already  The FreeIPA server is already installed (refer to the Red Hat 7 IdM Install Guide) Replica is already installed and providing failover CA and DNS services Hosts are registered with the FreeIPA server  Configure FreeIPA You need to add the service to both the client and server:</description>
+    </item>
+    
+    <item>
+      <title>KVM Guest Raw Disk Access</title>
+      <link>https://www.nathancurry.com/blog/06-kvm-guest-raw-disk-access/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/06-kvm-guest-raw-disk-access/</guid>
+      <description>In the process of setting up my NFS server, I ran into how best to attach a USB3 disk directly to the KVM guest for direct writethrough.
+Pools vs. Raw My criteria for the solution were as follows:
+ Portability. I don&amp;rsquo;t want to be stuck with a disk I can&amp;rsquo;t read without KVM tools. Speed. I&amp;rsquo;m actually going to be using this disk. Low overhead. I don&amp;rsquo;t need KVM to worry about the disk.</description>
+    </item>
+    
+    <item>
+      <title>Cisco ICND1 Recap</title>
+      <link>https://www.nathancurry.com/blog/05-icnd1-recap/</link>
+      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/05-icnd1-recap/</guid>
+      <description>I just tentatively passed the ICND1 with a 925&amp;sol;1000, and I&amp;rsquo;m pleased with my performance. Obviously, I am honor-bound (and perhaps more importantly, legally bound) to not discuss the exam contents.
+Preparation I began studying in late April. At the suggestion of a family friend and retired CCIE, I worked off the following materials:
+ An all-in-one rack on eBay that had 3 1841 routers, 2 layer2 switches, and 1 layer3 switch for $300.</description>
+    </item>
+    
+    <item>
+      <title>CCENT Lab Notes, Part 3</title>
+      <link>https://www.nathancurry.com/blog/03-ccent-lab-notes-part-3/</link>
+      <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/03-ccent-lab-notes-part-3/</guid>
+      <description>This is a continuation of my previous notes on CCENT labs. These Ranet labs are significantly better-designed than the previous set of labs, though the evaluation at the end of the exam doesn&amp;rsquo;t always work.
+These are my notes for all the labs that deal with ICND1 objectives, and I will save the ICND2 objectives for later when I review.
+SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS</description>
+    </item>
+    
+    <item>
+      <title>CCENT Lab Notes, Part 2</title>
+      <link>https://www.nathancurry.com/blog/02-ccent-lab-notes-part-2/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/02-ccent-lab-notes-part-2/</guid>
+      <description>This is a log of my work on last 6 of these PackTracer labs for the ICND1 exam.
+SPOILER ALERT: Do your labs first, these are notes on how I resolved them.
+Lab 7  PC0 cannot ping PC1, can you fix it?
+ I verify that both PCs can ping as far as the outward-facing interface of R3. I furthermore verify that both R3 can ping R1, but not from its inside interface.</description>
+    </item>
+    
+    <item>
+      <title>Red Hat EX200 Recap</title>
+      <link>https://www.nathancurry.com/blog/04-ex200-recap/</link>
+      <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/04-ex200-recap/</guid>
+      <description>I&amp;rsquo;m an RHCSA as of August 17th, and I figured I&amp;rsquo;d jot down a few notes about my preparation, successes, and failures.
+Preparation My materials to prepare for this exam:
+ CBT Nuggets System Administrator Prep videos
+ Michael Jang&amp;rsquo;s RCHSA/RHCE 7 book
+ Some free online practice exams
+ 3x micro PCs for hypervisors
+  The CBT Nuggets video series was rudimentary, but it has one of the better intros into SELinux that I&amp;rsquo;ve seen.</description>
+    </item>
+    
+    <item>
+      <title>CCENT Lab Notes, Part 1</title>
+      <link>https://www.nathancurry.com/blog/01-ccent-lab-notes-part-1/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/01-ccent-lab-notes-part-1/</guid>
+      <description>This is a log of my work on the first 6 of these PackTracer labs for the ICND1 exam.
+SPOILERS FOLLOW!!! This is not a guide on how to approach the problems, it&amp;rsquo;s a review of completed work. This perhaps has educational merit, but please continue only after having completed the labs yourself.
+Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?</description>
+    </item>
+    
+  </channel>
+</rss>

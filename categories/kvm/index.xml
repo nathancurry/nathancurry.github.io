@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kvm on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <link>https://www.nathancurry.com/categories/kvm/</link>
+    <description>Recent content in Kvm on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/kvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KVM Guest Raw Disk Access</title>
+      <link>https://www.nathancurry.com/blog/06-kvm-guest-raw-disk-access/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/06-kvm-guest-raw-disk-access/</guid>
+      <description>In the process of setting up my NFS server, I ran into how best to attach a USB3 disk directly to the KVM guest for direct writethrough.
+Pools vs. Raw My criteria for the solution were as follows:
+ Portability. I don&amp;rsquo;t want to be stuck with a disk I can&amp;rsquo;t read without KVM tools. Speed. I&amp;rsquo;m actually going to be using this disk. Low overhead. I don&amp;rsquo;t need KVM to worry about the disk.</description>
+    </item>
+    
+  </channel>
+</rss>

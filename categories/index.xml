@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <link>https://www.nathancurry.com/categories/</link>
+    <description>Recent content in Categories on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ansible</title>
+      <link>https://www.nathancurry.com/categories/ansible/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bind</title>
+      <link>https://www.nathancurry.com/categories/bind/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/bind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certifications</title>
+      <link>https://www.nathancurry.com/categories/certifications/</link>
+      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/certifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>https://www.nathancurry.com/categories/cisco/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dhcp</title>
+      <link>https://www.nathancurry.com/categories/dhcp/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/dhcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dhcpd</title>
+      <link>https://www.nathancurry.com/categories/dhcpd/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/dhcpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dns</title>
+      <link>https://www.nathancurry.com/categories/dns/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freeipa</title>
+      <link>https://www.nathancurry.com/categories/freeipa/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/freeipa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glusterfs</title>
+      <link>https://www.nathancurry.com/categories/glusterfs/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/glusterfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Homelab</title>
+      <link>https://www.nathancurry.com/categories/homelab/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/homelab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iac</title>
+      <link>https://www.nathancurry.com/categories/iac/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kvm</title>
+      <link>https://www.nathancurry.com/categories/kvm/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://www.nathancurry.com/categories/networking/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nfs</title>
+      <link>https://www.nathancurry.com/categories/nfs/</link>
+      <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/nfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>https://www.nathancurry.com/categories/proxmox/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redhat</title>
+      <link>https://www.nathancurry.com/categories/redhat/</link>
+      <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubiquiti</title>
+      <link>https://www.nathancurry.com/categories/ubiquiti/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/ubiquiti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>https://www.nathancurry.com/categories/virtualization/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vlan</title>
+      <link>https://www.nathancurry.com/categories/vlan/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/vlan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

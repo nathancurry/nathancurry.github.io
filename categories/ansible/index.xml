@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <link>https://www.nathancurry.com/categories/ansible/</link>
+    <description>Recent content in Ansible on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating BIND Config From Ansible hostvars</title>
+      <link>https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/</guid>
+      <description>Since streamlining my container deployment, I&amp;rsquo;ve been working on automating a BIND deployment. I found this excellent role over at MangoLassi.it, and I&amp;rsquo;m tailoring it to my needs.
+Generating based on hostvars For now, I&amp;rsquo;m statically mapping IPs, MAC addresses, and a few other machine facts in host_vars, so that I have a defined infrastructure, even when
+fqdn: &amp;#39;ns.lan.nathancurry.com&amp;#39; ip_address: &amp;#39;10.3.3.2&amp;#39; mac_address: &amp;#39;52:54:00:76:b4:78&amp;#39; services: [ &amp;#39;dns&amp;#39;, &amp;#39;dhcp&amp;#39; ] This allows me to keep key infrastructure facts in one place.</description>
+    </item>
+    
+    <item>
+      <title>Deploying Infrastructure on Proxmox with Ansible</title>
+      <link>https://www.nathancurry.com/blog/14-ansible-deployment-with-proxmox/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/14-ansible-deployment-with-proxmox/</guid>
+      <description>I&amp;rsquo;ve broken down my HomeLab, and I&amp;rsquo;m rebuilding it in Ansible for deployment on a Proxmox cluster.
+Configure Proxmox for ansible I&amp;rsquo;ve been working off morph027&amp;rsquo;s workflow for a first successful run. He uses the ansible plugin proxmox_kvm, and I&amp;rsquo;m using proxmox (for containers).
+Infrastructure Short and sweet:
+[proxmox] gold silver bronze Setup script To get my blood pumping, I wrote a playbook to configure the three nodes:
+# install_pip.</description>
+    </item>
+    
+  </channel>
+</rss>

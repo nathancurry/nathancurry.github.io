@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Nathan Curry - Sysadmin, RHCSA, CCENT</title>
+    <link>https://www.nathancurry.com/page/</link>
+    <description>Recent content in Pages on Nathan Curry - Sysadmin, RHCSA, CCENT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Sep 2017 08:00:00 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typography</title>
+      <link>https://www.nathancurry.com/typography/</link>
+      <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/typography/</guid>
+      <description>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Heading 2 Another one. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Lab</title>
+      <link>https://www.nathancurry.com/lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/lab/</guid>
+      <description>I&amp;rsquo;ve got a home lab where I&amp;rsquo;m configuring a pseudo-enterprise environment, complete with virtualized bastion servers.
+Network Equipment Router: Ubiquiti EdgeRouter X Crazy powerful box for $50. Nice WebUI, and has a hardware switch chip, so it does actual gigabit.
+WAP: Asus RT-AC68U with Merlin Firmware Great WAP, and it was a great router until I got gigabit Internet. I saved some money getting a T-Mobile-branded refurb on Amazon for $77, and reflashing it.</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>https://www.nathancurry.com/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/cv/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
