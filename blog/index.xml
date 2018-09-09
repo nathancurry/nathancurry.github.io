@@ -17,7 +17,7 @@
       
       <guid>https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/</guid>
       <description>Since streamlining my container deployment, I&amp;rsquo;ve been working on automating a BIND deployment. I found this excellent role over at MangoLassi.it, and I&amp;rsquo;m tailoring it to my needs.
-Generating based on hostvars For now, I&amp;rsquo;m statically mapping IPs, MAC addresses, and a few other machine facts in host_vars, so that I have a defined infrastructure, even when
+Generating based on hostvars For now, I&amp;rsquo;m statically mapping IPs, MAC addresses, and a few other machine facts in host_vars, so that I have a defined infrastructure, even when the hosts don&amp;rsquo;t exist.
 fqdn: &amp;#39;ns.lan.nathancurry.com&amp;#39; ip_address: &amp;#39;10.3.3.2&amp;#39; mac_address: &amp;#39;52:54:00:76:b4:78&amp;#39; services: [ &amp;#39;dns&amp;#39;, &amp;#39;dhcp&amp;#39; ] This allows me to keep key infrastructure facts in one place.</description>
     </item>
     
