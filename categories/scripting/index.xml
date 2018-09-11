@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripting on Nathan Curry</title>
+    <link>https://www.nathancurry.com/categories/scripting/</link>
+    <description>Recent content in Scripting on Nathan Curry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 11 Sep 2018 10:45:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/scripting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>String Replacement With Shell One-Liners</title>
+      <link>https://www.nathancurry.com/blog/18-shell-one-liners-for-string-replacement/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/18-shell-one-liners-for-string-replacement/</guid>
+      <description>I&amp;rsquo;m about to start working on installing FreeIPA servers, and I need to make a few small changes to variables as stored. The most efficient way was to use a few one-liners.
+Rename inventory I want to rename all ansible hosts as their FQDN. I attack the ini-style inventory file like so:
+nc@tiny: ~/0/homelab.ansible/ $ sed -i &amp;#34;s/[a-z1-9]$/&amp;amp;.lan.nathancurry.com/&amp;#34; inventory This simply matches each line that ends in either a letter or a number, and appends (the &amp;amp; operator) the rest of the FQDN.</description>
+    </item>
+    
+  </channel>
+</rss>

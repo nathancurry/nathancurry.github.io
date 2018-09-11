@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Bash</title>
+      <link>https://www.nathancurry.com/categories/bash/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bind</title>
       <link>https://www.nathancurry.com/categories/bind/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
@@ -74,6 +83,15 @@
     </item>
     
     <item>
+      <title>Grep</title>
+      <link>https://www.nathancurry.com/categories/grep/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/grep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Homelab</title>
       <link>https://www.nathancurry.com/categories/homelab/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
@@ -124,6 +142,24 @@
       <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
       
       <guid>https://www.nathancurry.com/categories/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripting</title>
+      <link>https://www.nathancurry.com/categories/scripting/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sed</title>
+      <link>https://www.nathancurry.com/categories/sed/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/sed/</guid>
       <description></description>
     </item>
     
