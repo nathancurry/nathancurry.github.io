@@ -28,8 +28,9 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
       
       <guid>https://www.nathancurry.com/lab/</guid>
       <description>I&amp;rsquo;ve got a home lab where I&amp;rsquo;m configuring a pseudo-enterprise environment, complete with virtualized bastion servers.
-Network Equipment Router: Ubiquiti EdgeRouter X Crazy powerful box for $50. Nice WebUI, and has a hardware switch chip, so it does actual gigabit.
-WAP: Asus RT-AC68U with Merlin Firmware Great WAP, and it was a great router until I got gigabit Internet. I saved some money getting a T-Mobile-branded refurb on Amazon for $77, and reflashing it.</description>
+Cisco Lab:  3x 1841 Routers 1x Catalyst WS-2960-8TC-L 1x Catalyst WS-2960g-8TC-L 1x Catalyst 3550 48-port Layer3 Switch 1x Aironet 1601e WAP  This is my lab environment for my CCNA exams.
+Computers Almost everything in my lab runs CentOS 7. My tricked out x220 is running Fedora 28.
+Bare metal hosts: A three-node Proxmox VE cluster running a GlusterFS cluster for high availability.</description>
     </item>
     
     <item>

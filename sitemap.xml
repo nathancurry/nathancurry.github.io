@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/blog/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,6 +23,11 @@
   
   <url>
     <loc>https://www.nathancurry.com/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -46,11 +51,6 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</loc>
-    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/</loc>
     <lastmod>2018-09-04T14:00:00+00:00</lastmod>
   </url>
@@ -63,11 +63,6 @@
   <url>
     <loc>https://www.nathancurry.com/blog/09-two-node-glusterfs-on-ovirt/</loc>
     <lastmod>2018-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/blog/08-dns-dynamic-updates-on-ubiquiti-erx/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -107,7 +102,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/ansible/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,13 +112,13 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/bind/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.nathancurry.com/categories/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -135,7 +130,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/cisco/</loc>
-    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-29T16:08:45-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -144,20 +139,8 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/dhcp/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/categories/dhcpd/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/dns/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -188,12 +171,6 @@
   <url>
     <loc>https://www.nathancurry.com/categories/kvm/</loc>
     <lastmod>2018-08-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/networking/</loc>
-    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -236,20 +213,8 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/ubiquiti/</loc>
-    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/categories/virtualization/</loc>
-    <lastmod>2018-09-07T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/vlan/</loc>
-    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,21 +5,10 @@
     <link>https://www.nathancurry.com/categories/cisco/</link>
     <description>Recent content in Cisco on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Aug 2018 16:08:45 -0600</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/cisco/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>VLANs with Cisco and Ubiquiti</title>
-      <link>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</guid>
-      <description>My girlfriend is out of town, so now&amp;rsquo;s a great time to set up VLANs.
-The Map I&amp;rsquo;m switching to 10.3.3.0/24, since that&amp;rsquo;s easier to type than 192.168.7.0/24, especially in the dark.
-Private LAN  VLAN 1 10.3.3.0/25 Pool 80-126  Guest WiFi  VLAN 99 10.3.3.128&amp;sol;26 No routing to other subnets  IoT  VLAN 5 10.3.3.208&amp;sol;28 Restricted routes available to other VLANs  DMZ  VLAN 10 10.</description>
-    </item>
     
     <item>
       <title>Cisco ICND1 Recap</title>

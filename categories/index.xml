@@ -5,7 +5,7 @@
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Ansible</title>
       <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/ansible/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>Bind</title>
       <link>https://www.nathancurry.com/categories/bind/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/bind/</guid>
       <description></description>
@@ -40,36 +40,18 @@
     <item>
       <title>Cisco</title>
       <link>https://www.nathancurry.com/categories/cisco/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
       
       <guid>https://www.nathancurry.com/categories/cisco/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dhcp</title>
-      <link>https://www.nathancurry.com/categories/dhcp/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/dhcp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Dhcpd</title>
       <link>https://www.nathancurry.com/categories/dhcpd/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/dhcpd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dns</title>
-      <link>https://www.nathancurry.com/categories/dns/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/dns/</guid>
       <description></description>
     </item>
     
@@ -119,15 +101,6 @@
     </item>
     
     <item>
-      <title>Networking</title>
-      <link>https://www.nathancurry.com/categories/networking/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/networking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Nfs</title>
       <link>https://www.nathancurry.com/categories/nfs/</link>
       <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
@@ -155,29 +128,11 @@
     </item>
     
     <item>
-      <title>Ubiquiti</title>
-      <link>https://www.nathancurry.com/categories/ubiquiti/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/ubiquiti/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Virtualization</title>
       <link>https://www.nathancurry.com/categories/virtualization/</link>
-      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/virtualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vlan</title>
-      <link>https://www.nathancurry.com/categories/vlan/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/vlan/</guid>
       <description></description>
     </item>
     

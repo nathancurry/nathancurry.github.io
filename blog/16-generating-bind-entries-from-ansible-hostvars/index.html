@@ -219,7 +219,7 @@ hostlist: <span style="color:#f1fa8c">&#34;{{ groups[&#39;all&#39;] }}&#34;</spa
 
 #reverse
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">host</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">hostlist</span> <span style="color:#ff79c6">%}</span>
-<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.ip_address</span><span style="color:#ff79c6">|</span><span style="color:#50fa7b">regex_replace</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;10.3.3.&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span>  IN   PTR   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">domain</span> <span style="color:#ff79c6">}}</span>.
+<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.ip_address</span><span style="color:#ff79c6">|</span><span style="color:#50fa7b">regex_replace</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;10.3.3.&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span>  IN   PTR   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.fqdn</span> <span style="color:#ff79c6">}}</span>.
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span></code></pre></div>
 <p>And commented out the now non-existent records variable:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#6272a4">#  with_dict: &#34;{{ records }}&#34;</span></code></pre></div>
@@ -255,6 +255,16 @@ hostlist: <span style="color:#f1fa8c">&#34;{{ groups[&#39;all&#39;] }}&#34;</spa
 </svg>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Customize a CentOS LXC Container with Proxmox</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/blog/17-ansible-workflow-deploying-dns-dhcp/'>
+        <span class='screen-reader-text'>Next post: </span>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
     </div></div>
 </nav>
 

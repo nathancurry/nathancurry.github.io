@@ -128,12 +128,8 @@
   </summary>
   <nav id="TableOfContents">
 <ul>
-<li><a href="#network-equipment">Network Equipment</a>
+<li>
 <ul>
-<li><a href="#router-ubiquiti-edgerouter-x">Router: Ubiquiti EdgeRouter X</a></li>
-<li><a href="#wap-asus-rt-ac68u-with-merlin-firmware">WAP: Asus RT-AC68U with Merlin Firmware</a></li>
-<li><a href="#wap-cisco-aironet-1601e">WAP: Cisco Aironet 1601e</a></li>
-<li><a href="#switch-cisco-catalyst-ws-c2960g-8tc-l">Switch: Cisco Catalyst WS-C2960G-8TC-L</a></li>
 <li><a href="#cisco-lab">Cisco Lab:</a></li>
 </ul></li>
 <li><a href="#computers">Computers</a>
@@ -146,13 +142,14 @@
 </ul></li>
 <li><a href="#containers">Containers:</a>
 <ul>
-<li><a href="#ns">ns</a></li>
-<li><a href="#data">data</a></li>
-<li><a href="#ks">ks</a></li>
+<li><a href="#ns1-ns2">ns1 &amp; ns2</a></li>
+<li><a href="#share">share</a></li>
+<li><a href="#storage">storage</a></li>
+<li><a href="#db-dbz">db &amp; dbz</a></li>
 </ul></li>
 <li><a href="#virtual-machines">Virtual machines:</a>
 <ul>
-<li><a href="#ipa-ipa2">ipa &amp; ipa2</a></li>
+<li><a href="#ipa-ipb">ipa &amp; ipb</a></li>
 <li><a href="#awx">awx</a></li>
 </ul></li>
 <li><a href="#workstation">Workstation</a>
@@ -171,37 +168,17 @@
 
 <p>I&rsquo;ve got a home lab where I&rsquo;m configuring a pseudo-enterprise environment, complete with virtualized bastion servers.</p>
 
-<h1 id="network-equipment">Network Equipment</h1>
-
-<h2 id="router-ubiquiti-edgerouter-x">Router: Ubiquiti EdgeRouter X</h2>
-
-<p>Crazy powerful box for $50.  Nice WebUI, and has a hardware switch chip, so it does actual gigabit.</p>
-
-<h2 id="wap-asus-rt-ac68u-with-merlin-firmware">WAP: Asus RT-AC68U with Merlin Firmware</h2>
-
-<p>Great WAP, and it was a great router until I got gigabit Internet.  I saved some money getting a T-Mobile-branded refurb on Amazon for $77, and reflashing it.</p>
-
-<p>I get about 250-350Mbps on my two laptops with 2x2 antennas.</p>
-
-<h2 id="wap-cisco-aironet-1601e">WAP: Cisco Aironet 1601e</h2>
-
-<p>I picked this up from a friend for cheap so I can get more Cisco in my life.  Since wireless N maxes out around 150Mbps for 2x2 antennas, it&rsquo;s been relegated to serving my guest WiFi.</p>
-
-<p>I thought about selling it, but I put $40 into antennas, and these things sell for $50 on a good day.  It&rsquo;s going to serve as my guest WiFi.</p>
-
-<h2 id="switch-cisco-catalyst-ws-c2960g-8tc-l">Switch: Cisco Catalyst WS-C2960G-8TC-L</h2>
-
-<p>Not much to say about this guy.  VLAN tagging along with the</p>
-
 <h2 id="cisco-lab">Cisco Lab:</h2>
 
 <ul>
 <li>3x 1841 Routers</li>
 <li>1x Catalyst WS-2960-8TC-L</li>
+<li>1x Catalyst WS-2960g-8TC-L</li>
 <li>1x Catalyst 3550 48-port Layer3 Switch</li>
+<li>1x Aironet 1601e WAP</li>
 </ul>
 
-<p>This is my lab environment for my CCNA exams.  It is linked to my production network via the SFP uplink on the 2960s, which is quite unnecessarily cool.</p>
+<p>This is my lab environment for my CCNA exams.</p>
 
 <h1 id="computers">Computers</h1>
 
@@ -242,30 +219,36 @@
 
 <h2 id="containers">Containers:</h2>
 
-<h3 id="ns">ns</h3>
+<h3 id="ns1-ns2">ns1 &amp; ns2</h3>
 
 <ul>
 <li>DNS forwarder (named)</li>
 <li>DHCP server (dhcpd)</li>
 </ul>
 
-<h3 id="data">data</h3>
+<h3 id="share">share</h3>
 
 <ul>
 <li>File server</li>
-<li>Time Machine-style backup</li>
+<li>Tim-style backup</li>
 </ul>
 
-<h3 id="ks">ks</h3>
+<h3 id="storage">storage</h3>
 
 <ul>
-<li>Sync&rsquo;d CentOS 7 repos</li>
-<li>PXE boot/Kickstart server</li>
+<li>CentOS 7 repos, synced on demand</li>
+<li>Backups</li>
+</ul>
+
+<h3 id="db-dbz">db &amp; dbz</h3>
+
+<ul>
+<li>Databases for various services</li>
 </ul>
 
 <h2 id="virtual-machines">Virtual machines:</h2>
 
-<h3 id="ipa-ipa2">ipa &amp; ipa2</h3>
+<h3 id="ipa-ipb">ipa &amp; ipb</h3>
 
 <ul>
 <li>IdM server and replica</li>

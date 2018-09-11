@@ -5,10 +5,20 @@
     <link>https://www.nathancurry.com/blog/</link>
     <description>Recent content in Blog on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</title>
+      <link>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</guid>
+      <description>I&amp;rsquo;ve been working on getting the individual pieces put together on this, and I finally have the entire thing working. I&amp;rsquo;ve got a playbook workflow that will deploy two containers, install BIND and ISC DHCPD, and start them.
+What it will not do is update DNS automatically. I&amp;rsquo;m able to update the DNS manually with nsupdate, but it appears as though DHCPD isn&amp;rsquo;t even trying. For now, I&amp;rsquo;m moving on, and I will revisit with fresh eyes.</description>
+    </item>
     
     <item>
       <title>Generating BIND Config From Ansible hostvars</title>
@@ -58,17 +68,6 @@ Create the gluster brick I ran into an issue that I had one fewer available phys
     </item>
     
     <item>
-      <title>VLANs with Cisco and Ubiquiti</title>
-      <link>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/12-vlans-on-ubiquiti-and-cisco/</guid>
-      <description>My girlfriend is out of town, so now&amp;rsquo;s a great time to set up VLANs.
-The Map I&amp;rsquo;m switching to 10.3.3.0/24, since that&amp;rsquo;s easier to type than 192.168.7.0/24, especially in the dark.
-Private LAN  VLAN 1 10.3.3.0/25 Pool 80-126  Guest WiFi  VLAN 99 10.3.3.128&amp;sol;26 No routing to other subnets  IoT  VLAN 5 10.3.3.208&amp;sol;28 Restricted routes available to other VLANs  DMZ  VLAN 10 10.</description>
-    </item>
-    
-    <item>
       <title>Proxmox VE 5.2-1 with a GlusterFS Store</title>
       <link>https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/</link>
       <pubDate>Tue, 04 Sep 2018 14:00:00 +0000</pubDate>
@@ -99,17 +98,6 @@ Set DHCP and DNS Previously, I was generating MAC addressed based on the FQDN of
       <description>Generally speaking, you shouldn&amp;rsquo;t configure two nodes in a Gluster, since data divergence is resolved by a vote among the nodes. However, my third bare metal host is currently occupied recovering data from a dying hard drive, so I&amp;rsquo;m doing this for now and adding the third brick later.
 Install oVirt I booted the oVirt 4.2 installer ISO off a flash drive, and made only minor changes.
 I took the suggested partition scheme, but reduced the root partition to 8GiB, and used the spare space for my glusterfs partition, formatting it XFS and mounting it on /glusterfs</description>
-    </item>
-    
-    <item>
-      <title>DNS Dynamic Updates With DNSMasq on Ubiquiti ER-X</title>
-      <link>https://www.nathancurry.com/blog/08-dns-dynamic-updates-on-ubiquiti-erx/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/08-dns-dynamic-updates-on-ubiquiti-erx/</guid>
-      <description>I had previously spun up DNS and DHCP on a CentOS 7 VM, but I&amp;rsquo;m currently blowing out my entire environment to migrate to oVirt. Plus, I&amp;rsquo;ve since gotten a Ubiquiti Edgerouter X, which is a mighty capable device.
-The default DHCP server is ISC dhcpd, and the configuration doesn&amp;rsquo;t update DNS entries (or at least not reliably), so I chose to use dnsmasq
-Prerequisites I never turned on the DHCP server, but you&amp;rsquo;ll have to turn it off.</description>
     </item>
     
     <item>
