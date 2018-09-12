@@ -5,22 +5,10 @@
     <link>https://www.nathancurry.com/categories/nfs/</link>
     <description>Recent content in Nfs on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 03 Sep 2018 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/nfs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Containerized NFS Server on Proxmox VE 5.2-1</title>
-      <link>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</link>
-      <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</guid>
-      <description>I like the flexibility of Proxmox, and this post covers spinning up my first LXC container, an NFS share.
-Preliminary work Before spinning up the systems, there were a few things to do:
-Load template I navigated to the storage (in this case my gluster volume), hit Templates button and added the latest centos-7-default container template. It was downloaded in a matter of seconds
-Set DHCP and DNS Previously, I was generating MAC addressed based on the FQDN of the host, applying them to the VM, and entering them as static leases in my DHCP server.</description>
-    </item>
     
     <item>
       <title>Kerberized NFS with FreeIPA on CentOS 7 and Fedora 28</title>

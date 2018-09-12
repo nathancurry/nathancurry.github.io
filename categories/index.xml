@@ -5,7 +5,7 @@
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Ansible</title>
       <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/ansible/</guid>
       <description></description>
@@ -121,7 +121,7 @@
     <item>
       <title>Nfs</title>
       <link>https://www.nathancurry.com/categories/nfs/</link>
-      <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/nfs/</guid>
       <description></description>
@@ -142,6 +142,15 @@
       <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
       
       <guid>https://www.nathancurry.com/categories/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reposync</title>
+      <link>https://www.nathancurry.com/categories/reposync/</link>
+      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/reposync/</guid>
       <description></description>
     </item>
     

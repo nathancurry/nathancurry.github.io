@@ -5,10 +5,20 @@
     <link>https://www.nathancurry.com/categories/ansible/</link>
     <description>Recent content in Ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible Role For Local Repo</title>
+      <link>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</link>
+      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</guid>
+      <description>I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
+Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.yml This basically sets the lone variable I need, and calls the other two scripts</description>
+    </item>
     
     <item>
       <title>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</title>

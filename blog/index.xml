@@ -5,10 +5,20 @@
     <link>https://www.nathancurry.com/blog/</link>
     <description>Recent content in Blog on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Sep 2018 10:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible Role For Local Repo</title>
+      <link>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</link>
+      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</guid>
+      <description>I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
+Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.yml This basically sets the lone variable I need, and calls the other two scripts</description>
+    </item>
     
     <item>
       <title>String Replacement With Shell One-Liners</title>
@@ -86,18 +96,6 @@ Create the gluster brick I ran into an issue that I had one fewer available phys
       <guid>https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/</guid>
       <description>I had initially planned on migrating from plain KVM to oVirt. My reasoning was thus:
  oVirt is the upstream of Red Hat Enterprise Virtualization, and I plan on pursuing higher Red Hat certifications It inegrates with OpenStack, another technology adopted by Red Hat It&amp;rsquo;s robust and flexible  However, upon installing * Documentation for RHEV is complete, but behind a version or two * Documentation for oVirt is poorly maintained, and some documents stop almost mid-sentence * Terraform plugins for oVirt are not ready for primetime * The network management is needlessly ornate</description>
-    </item>
-    
-    <item>
-      <title>Containerized NFS Server on Proxmox VE 5.2-1</title>
-      <link>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</link>
-      <pubDate>Mon, 03 Sep 2018 16:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/10-containerized-nfs-server-on-proxmox/</guid>
-      <description>I like the flexibility of Proxmox, and this post covers spinning up my first LXC container, an NFS share.
-Preliminary work Before spinning up the systems, there were a few things to do:
-Load template I navigated to the storage (in this case my gluster volume), hit Templates button and added the latest centos-7-default container template. It was downloaded in a matter of seconds
-Set DHCP and DNS Previously, I was generating MAC addressed based on the FQDN of the host, applying them to the VM, and entering them as static leases in my DHCP server.</description>
     </item>
     
     <item>
