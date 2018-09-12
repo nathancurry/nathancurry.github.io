@@ -5,12 +5,14 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
-Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.yml This basically sets the lone variable I need, and calls the other two scripts'>
+Here is the relevant git commit
+Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.'>
 <meta name='theme-color' content='#de7040'>
 
 <meta property='og:title' content='Ansible Role For Local Repo • Nathan Curry'>
 <meta property='og:description' content='I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
-Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.yml This basically sets the lone variable I need, and calls the other two scripts'>
+Here is the relevant git commit
+Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.'>
 <meta property='og:url' content='https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/'>
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-11T17:00:00Z'/><meta property='article:modified_time' content='2018-09-11T17:00:00Z'/><meta name='twitter:card' content='summary'>
@@ -172,6 +174,8 @@ Structure files/ # Static files centos7.repo # Sync source local.repo # Repo fil
   
 
 <p>I need a local install source and system I can serve kickstart files from.   I wrote an Ansible role to accomplish this.  The kickstart process will be covered in the next article.</p>
+
+<p>Here is the relevant <a href="https://github.com/nathancurry/homelab.ansible/tree/e59d7c9a7966e10161a23133dbbc239051d53bac">git commit</a></p>
 
 <h1 id="structure">Structure</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">files/            # Static files

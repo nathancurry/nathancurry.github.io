@@ -17,7 +17,8 @@
       
       <guid>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</guid>
       <description>I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
-Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.yml This basically sets the lone variable I need, and calls the other two scripts</description>
+Here is the relevant git commit
+Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.</description>
     </item>
     
   </channel>
