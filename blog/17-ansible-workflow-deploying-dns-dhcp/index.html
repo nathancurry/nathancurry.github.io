@@ -179,7 +179,7 @@ What it will not do is update DNS automatically. I&rsquo;m able to update the DN
 
 <p>What it will not do is update DNS automatically.  I&rsquo;m able to update the DNS manually with nsupdate, but it appears as though DHCPD isn&rsquo;t even trying.  For now, I&rsquo;m moving on, and I will revisit with fresh eyes.</p>
 
-<p>You can find this git commit <a href="https://github.com/nathancurry/homelab.ansible/tree/93db8e73e6fbdaf73355620d04ff500b4f15504e">here</a></p>
+<p>You can find this git commit <a href="https://github.com/nathancurry/homelab.ansible/tree/0ed9902047bf94a3a0e9c70faa9c001673a1229f/roles/bind">here</a></p>
 
 <h1 id="container-deployment">Container deployment</h1>
 
@@ -253,20 +253,18 @@ node: <span style="color:#f1fa8c">&#39;gold&#39;</span></code></pre></div>
 <p>Similarly, I wanted this to be as modular as possible.  It still needs some work, but it&rsquo;s most of the way there.</p>
 
 <p>The zone files are dynamically filled out:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja2" data-lang="jinja2">$TTL 86400	; 1 day
-@	IN SOA	{{ ansible_fqdn }}. admin.{{ domain }}. (
-				7          ; serial
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja2" data-lang="jinja2">$ORIGIN .
+$TTL 604800	; 1 week
+{{ domain }}	IN SOA	{{ ansible_fqdn }}. admin.{{ domain }}. (
+				8          ; serial
 				604800     ; refresh (1 week)
 				86400      ; retry (1 day)
 				2419200    ; expire (4 weeks)
 				604800     ; minimum (1 week)
 				)
-;name servers
-				NS	ns1.lan.nathancurry.com.
-				NS	ns2.lan.nathancurry.com.
-;PTR records
+			NS	{{ ansible_fqdn }}.
 {% for host in hostlist %}
-{{ hostvars[host].ip_address|regex_replace(&#39;10.3.3.&#39;) }}  IN   PTR   {{ hostvars[host].fqdn }}.
+{{ host }}  IN  A  {{ hostvars[host].ansible_host }}
 {% endfor %}</code></pre></div>
 <h2 id="conditionals">Conditionals</h2>
 
@@ -297,7 +295,7 @@ node: <span style="color:#f1fa8c">&#39;gold&#39;</span></code></pre></div>
 
 <p>For now, I call three playbooks individually.  When I make a little more headway, and get some error handling built into my site, I&rsquo;m going to put together coherent ways to call large multi-stage operations.</p>
 
-<p>For now, take a look at <a href="https://github.com/nathancurry/homelab.ansible/tree/93db8e73e6fbdaf73355620d04ff500b4f15504e">this git commit</a> if you&rsquo;re interested</p>
+<p>For now, take a look at <a href="https://github.com/nathancurry/homelab.ansible/tree/0ed9902047bf94a3a0e9c70faa9c001673a1229f/roles/bind">this git commit</a> if you&rsquo;re interested</p>
 
 </div>
 
