@@ -5,7 +5,7 @@
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 20:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Ansible</title>
       <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Sep 2018 20:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/ansible/</guid>
       <description></description>
@@ -115,6 +115,15 @@
       <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kickstart</title>
+      <link>https://www.nathancurry.com/categories/kickstart/</link>
+      <pubDate>Wed, 12 Sep 2018 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/kickstart/</guid>
       <description></description>
     </item>
     

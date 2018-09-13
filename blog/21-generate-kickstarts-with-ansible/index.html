@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='I wanted a way to generate kickstart files so I can easily spin up new VMs. I will also be making use of cloning, but I want to have a PXE boot server at some point as well.
+I&rsquo;ve yet to test a deployment&ndash;and I&rsquo;m sure there&rsquo;s still tweaking to do&ndash;but the workflow is complete.
+You can find the relevant git commit here.
+Overview tasks/ └── make_kickstarts.yml roles/kickstart/ ├── tasks │ └── main.'>
+<meta name='theme-color' content='#de7040'>
+
+<meta property='og:title' content='Generate Kickstarts With Ansible • Nathan Curry'>
+<meta property='og:description' content='I wanted a way to generate kickstart files so I can easily spin up new VMs. I will also be making use of cloning, but I want to have a PXE boot server at some point as well.
+I&rsquo;ve yet to test a deployment&ndash;and I&rsquo;m sure there&rsquo;s still tweaking to do&ndash;but the workflow is complete.
+You can find the relevant git commit here.
+Overview tasks/ └── make_kickstarts.yml roles/kickstart/ ├── tasks │ └── main.'>
+<meta property='og:url' content='https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/'>
+<meta property='og:site_name' content='Nathan Curry'>
+<meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-12T20:00:00Z'/><meta property='article:modified_time' content='2018-09-12T20:00:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.48" />
+
+  <title>Generate Kickstarts With Ansible • Nathan Curry</title>
+  <link rel='canonical' href='https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/'>
+  
+  
+  <link rel='icon' href='/favicon/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#de7040;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-blog has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/i/headshot-245px.jpg'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Nathan Curry
+    </h2>
+    <div class='desc'>
+    Sysadmin, RHCSA, CCENT
+    </div>
+  </header>
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>About</a>
+      </li><li class='item'>
+        <a href='/blog/'>Blog</a>
+      </li><li class='item'>
+        <a href='/lab/'>Lab</a>
+      </li><li class='item'>
+        <a href=''></a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Generate Kickstarts With Ansible</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-09-12T20:00:00Z'>12 Sep 2018</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+3 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#tasks-make-kickstarts-yml">tasks/make_kickstarts.yml</a></li>
+<li><a href="#vars-main-yml">vars/main.yml</a></li>
+<li><a href="#tasks-main-yml">tasks/main.yml</a>
+<ul>
+<li><a href="#templates-kickstart-j2">templates/kickstart.j2</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#back-matter">Back matter</a></li>
+</ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+
+<p>I wanted a way to generate kickstart files so I can easily spin up new VMs.  I will also be making use of cloning, but I want to have a PXE boot server at some point as well.</p>
+
+<p>I&rsquo;ve yet to test a deployment&ndash;and I&rsquo;m sure there&rsquo;s still tweaking to do&ndash;but the workflow is complete.</p>
+
+<p>You can find the relevant git commit <a href="https://github.com/nathancurry/homelab.ansible/tree/d54b1b31f12a278c6484e59089a703eee74a1e1d">here.</a></p>
+
+<h1 id="overview">Overview</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tcsh" data-lang="tcsh">tasks/
+└── make_kickstarts.yml
+roles/kickstart/
+├── tasks
+│   └── main.yml
+├── templates
+│   └── kickstart.j2
+└── vars
+    └── main.yml</code></pre></div>
+<h2 id="tasks-make-kickstarts-yml">tasks/make_kickstarts.yml</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">---
+- name: Make kickstarts
+  hosts: repo.lan.nathancurry.com
+  gather_facts: <span style="color:#ff79c6">false</span>
+  user: root
+
+  roles:
+    - kickstart</code></pre></div>
+<h2 id="vars-main-yml">vars/main.yml</h2>
+
+<p>Here, I define all the variables used for templating.  A lot of info is pulled from hostvars.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">---
+ks_dir: /data/www/html/ks
+repo_url: <span style="color:#f1fa8c">&#39;http://repo.lan.nathancurry.com/repo/centos7/base&#39;</span>
+ntp_servers:
+  - gold.lan.nathancurry.com
+  - silver.lan.nathancurry.com
+  - bronze.lan.nathancurry.com
+timezone: <span style="color:#f1fa8c">&#34;America/Denver&#34;</span>
+hostlist: <span style="color:#f1fa8c">&#34;{{ groups[all] }}&#34;</span>
+bootargs: <span style="color:#f1fa8c">&#39;console=ttyS0,115200&#39;</span>
+
+
+defaults:
+  netmask: <span style="color:#bd93f9">255.255</span>.<span style="color:#bd93f9">255.128</span>
+  ns:
+    - <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.2</span>
+    - <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.3</span>
+  gw: <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.1</span>
+  domain: lan.nathancurry.com
+  netdev: eth0</code></pre></div>
+<h2 id="tasks-main-yml">tasks/main.yml</h2>
+
+<p>Short and sweet.  Just iterate over the list of requested hosts, and install templates to the server.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">---
+  - name: Include vars
+    include_vars: ../vars/main.yml
+
+
+  - name: Include secrets
+    include_vars: ~/<span style="color:#bd93f9">0</span>/vault/secrets.yml
+
+  - name: Generate unattended install
+    template:
+      src: ../templates/kickstart.j2
+      dest: <span style="color:#f1fa8c">&#34;{{ ks_dir }}/{{ hostvars[item].inventory_hostname_short }}.ks&#34;</span>
+    with_items: <span style="color:#f1fa8c">&#34;{{ groups[&#39;all&#39;] | difference(groups[&#39;proxmox&#39;]) }}&#34;</span></code></pre></div>
+<h3 id="templates-kickstart-j2">templates/kickstart.j2</h3>
+
+<p>This isn&rsquo;t the most sophisticated template in the world, but I&rsquo;m faced with doing a lot on the front end with kickstarts or on the back end with Ansible.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja" data-lang="jinja"># front matter
+install
+url --url=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">repo_url</span> <span style="color:#ff79c6">}}</span>
+skipx
+text
+reboot
+lang en_US.UTF-8
+keyboard us
+eula --agreed
+firstboot --disable
+
+# services
+selinux --disabled
+firewall --disabled
+services --enabled=network,sshd,snmpd,chronyd
+
+# passwords
+rootpw --iscrypted <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">root_password_hash</span> <span style="color:#ff79c6">}}</span>
+authconfig --enableshadow --passalgo=sha512
+
+# timezone setup
+timezone --utc --ntpservers <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">ntp_servers</span><span style="color:#ff79c6">|</span><span style="color:#50fa7b">join</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;,&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">timezone</span> <span style="color:#ff79c6">}}</span>
+
+network --device=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;netdev&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;defaults.netdev&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> --onboot=yes --hostname=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">item</span> <span style="color:#ff79c6">}}</span>.<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;domain&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;defaults.domain&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;netargs&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> --bootproto=static --ip=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;ansible_host&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">}}</span> --netmask=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;netmask&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#8be9fd;font-style:italic">defaults</span><span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;netmask&#39;</span><span style="color:#ff79c6">])</span> <span style="color:#ff79c6">}}</span> --gateway=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;gateway&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;defaults.gw&#39;</span><span style="color:#ff79c6">)</span><span style="color:#ff79c6">}}</span> --nameserver=
+<span style="color:#ff79c6">{%</span>- <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">ns</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;nameservers&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;defaults.ns&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">%}</span>
+<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">ns</span> <span style="color:#ff79c6">}}{%</span> <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">not</span> <span style="color:#8be9fd;font-style:italic">loop</span><span style="color:#8be9fd;font-style:italic">.last</span> <span style="color:#ff79c6">%}</span>,<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endif</span> <span style="color:#ff79c6">%}</span>
+<span style="color:#ff79c6">{%</span>- <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span>
+
+
+
+# partition setup
+clearpart --all --drives=vda
+ignoredisk --only-use-vda
+bootloader --location=mbr --timeout=5 --append=&#34;<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">bootargs</span> <span style="color:#ff79c6">}}</span>&#34;
+zerombr
+clearpart --drives=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;drive&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;vda&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> --all
+part /boot --fstype=xfs --size=250
+part pv.156 --fstype=&#34;lvmpv&#34; --ondisk=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;drive&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">|</span> <span style="color:#50fa7b">default</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;sda&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span> --size=1 --grow
+volgroup <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">inventory_hostname_short</span> <span style="color:#ff79c6">}}</span> --pesize=4096 pv.156
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">if</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;swap&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">is</span> <span style="color:#50fa7b">defined</span> <span style="color:#ff79c6">%}</span>
+logvol swap  --fstype=&#34;swap&#34; --size=hostvars[item][&#39;swap&#39;] --name=swap --vgname=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">inventory_hostname_short</span> <span style="color:#ff79c6">}}</span>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endif</span> <span style="color:#ff79c6">%}</span>
+logvol /  --fstype=&#34;xfs&#34; --size=1 --name=root --vgname=<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">inventory_hostname_short</span> <span style="color:#ff79c6">}}</span> --grow
+
+
+# Packages
+%packages
+@minimal
+chrony
+vim-enhanced
+ipa-client
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">if</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;packages&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">is</span> <span style="color:#50fa7b">defined</span> <span style="color:#ff79c6">%}</span>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">pkg</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">item</span><span style="color:#ff79c6">][</span><span style="color:#f1fa8c">&#39;packages&#39;</span><span style="color:#ff79c6">]</span> <span style="color:#ff79c6">%}</span>
+<span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">pkg</span> <span style="color:#ff79c6">}}</span>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endif</span> <span style="color:#ff79c6">%}</span>
+
+%end
+
+%post --log=/root/ks-post.log
+sed -i -e &#39;s|^# %wheel\tALL=(ALL)\tNOPASSWD: ALL|%wheel\tALL=(ALL)\tNOPASSWD: ALL|; s|^Defaults    requiretty|#&amp;|&#39; /etc/sudoers
+
+
+##########################
+# repository configuration
+find  /etc/yum.repos.d/ -type f -exec mv &#39;{}&#39; &#39;{}&#39;.save &#39;;&#39;
+cat &lt;&lt;&#39;EOF&#39; &gt;/etc/yum.repos.d/local.repo
+[base]
+name=Local CentOS-$releasever - Base
+baseurl=http://repo.lan.nathancurry.com/repo/centos7/base/
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-centos4
+enabled=1
+exclude=centos-release*
+
+#released updates
+[updates]
+name=Local CentOS-$releasever - Updates
+baseurl=http://repo.lan.nathancurry.com/repo/centos7/updates/
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-centos4
+enabled=1
+
+#additional packages that may be useful
+[extras]
+name=Local CentOS-$releasever - Extras
+baseurl=http://repo.lan.nathancurry.com/repo/centos7/extras/
+gpgcheck=1
+gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-centos4
+enabled=1
+
+#epel
+[epel]
+name=Local CentOS-$releasever - Extras
+baseurl=http://repo.lan.nathancurry.com/repo/centos7/epel/
+gpgcheck=1
+gpgkey=http://mirror.grid.uchicago.edu/pub/linux/epel/RPM-GPG-KEY-EPEL-7
+enabled=1
+EOF
+#####################
+# END REPOS
+%end</code></pre></div>
+<h1 id="back-matter">Back matter</h1>
+
+<p>I&rsquo;m fairly happy with this implementation.  It could be a little more elegant, and I need to import my public key during install, but I&rsquo;ll get to that shortly.</p>
+
+<p>In the meantime, check out the relevant github commit <a href="https://github.com/nathancurry/homelab.ansible/tree/d54b1b31f12a278c6484e59089a703eee74a1e1d">here.</a></p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/kickstart/'>Kickstart</a>, <a class='category' href='/categories/ansible/'>Ansible</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/blog/20-configuring-chrony-with-ansible/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Configuring Time Services With Ansible</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

@@ -5,10 +5,22 @@
     <link>https://www.nathancurry.com/categories/ansible/</link>
     <description>Recent content in Ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 20:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generate Kickstarts With Ansible</title>
+      <link>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</link>
+      <pubDate>Wed, 12 Sep 2018 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</guid>
+      <description>I wanted a way to generate kickstart files so I can easily spin up new VMs. I will also be making use of cloning, but I want to have a PXE boot server at some point as well.
+I&amp;rsquo;ve yet to test a deployment&amp;ndash;and I&amp;rsquo;m sure there&amp;rsquo;s still tweaking to do&amp;ndash;but the workflow is complete.
+You can find the relevant git commit here.
+Overview tasks/ └── make_kickstarts.yml roles/kickstart/ ├── tasks │ └── main.</description>
+    </item>
     
     <item>
       <title>Configuring Time Services With Ansible</title>

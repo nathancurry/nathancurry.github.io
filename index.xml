@@ -43,6 +43,18 @@ Bare metal hosts: A three-node Proxmox VE cluster running a GlusterFS cluster fo
     </item>
     
     <item>
+      <title>Generate Kickstarts With Ansible</title>
+      <link>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</link>
+      <pubDate>Wed, 12 Sep 2018 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</guid>
+      <description>I wanted a way to generate kickstart files so I can easily spin up new VMs. I will also be making use of cloning, but I want to have a PXE boot server at some point as well.
+I&amp;rsquo;ve yet to test a deployment&amp;ndash;and I&amp;rsquo;m sure there&amp;rsquo;s still tweaking to do&amp;ndash;but the workflow is complete.
+You can find the relevant git commit here.
+Overview tasks/ └── make_kickstarts.yml roles/kickstart/ ├── tasks │ └── main.</description>
+    </item>
+    
+    <item>
       <title>Configuring Time Services With Ansible</title>
       <link>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</link>
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
