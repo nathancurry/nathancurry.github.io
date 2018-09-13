@@ -5,10 +5,22 @@
     <link>https://www.nathancurry.com/categories/ansible/</link>
     <description>Recent content in Ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Sep 2018 17:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Configuring Time Services With Ansible</title>
+      <link>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</guid>
+      <description>I put together an Ansible role for configuring network time services, using chrony.
+This is my most elegant work thus far, though before this is worth packaging, I&amp;rsquo;d like to configure the scripts to test for Debian vs. Red Hat, as well as add variables for a few things.
+You can take a look at the relevant git commit here.
+Structure Here are the files in this project. A task to call the roles, and a role for master/slave.</description>
+    </item>
     
     <item>
       <title>Ansible Role For Local Repo</title>

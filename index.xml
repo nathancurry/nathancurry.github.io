@@ -43,6 +43,18 @@ Bare metal hosts: A three-node Proxmox VE cluster running a GlusterFS cluster fo
     </item>
     
     <item>
+      <title>Configuring Time Services With Ansible</title>
+      <link>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</guid>
+      <description>I put together an Ansible role for configuring network time services, using chrony.
+This is my most elegant work thus far, though before this is worth packaging, I&amp;rsquo;d like to configure the scripts to test for Debian vs. Red Hat, as well as add variables for a few things.
+You can take a look at the relevant git commit here.
+Structure Here are the files in this project. A task to call the roles, and a role for master/slave.</description>
+    </item>
+    
+    <item>
       <title>Ansible Role For Local Repo</title>
       <link>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</link>
       <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
