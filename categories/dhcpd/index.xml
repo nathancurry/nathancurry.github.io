@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</title>
+      <title>Ansible: Deploy DNS/DHCP Failover Pair</title>
       <link>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       

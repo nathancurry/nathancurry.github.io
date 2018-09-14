@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/blog/</loc>
-    <lastmod>2018-09-12T20:00:00+00:00</lastmod>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,6 +23,11 @@
   
   <url>
     <loc>https://www.nathancurry.com/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/22-ansible-pxeboot-vms/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -117,7 +122,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/ansible/</loc>
-    <lastmod>2018-09-12T20:00:00+00:00</lastmod>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -139,7 +144,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/</loc>
-    <lastmod>2018-09-12T20:00:00+00:00</lastmod>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,7 +208,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/kickstart/</loc>
-    <lastmod>2018-09-12T20:00:00+00:00</lastmod>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -231,7 +236,13 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/proxmox/</loc>
-    <lastmod>2018-09-07T18:00:00+00:00</lastmod>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/pxe/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
