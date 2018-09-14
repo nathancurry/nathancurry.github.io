@@ -5,7 +5,7 @@
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Ansible</title>
       <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/ansible/</guid>
       <description></description>
@@ -191,11 +191,29 @@
     </item>
     
     <item>
+      <title>Security</title>
+      <link>https://www.nathancurry.com/categories/security/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sed</title>
       <link>https://www.nathancurry.com/categories/sed/</link>
       <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/sed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>https://www.nathancurry.com/categories/ssh/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/ssh/</guid>
       <description></description>
     </item>
     

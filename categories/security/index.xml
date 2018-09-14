@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Nathan Curry</title>
+    <link>https://www.nathancurry.com/categories/security/</link>
+    <description>Recent content in Security on Nathan Curry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hardening SSH With Ansible</title>
+      <link>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</guid>
+      <description>I&amp;rsquo;ve been using root login for Ansible for the first part of this project, in part because this is not a production environment, and in part to avoid too many confounding factors while learning Ansible.
+But it started to bug me. Check the relevant git commit here
+Overview This is a straightfoward task, but I broke it down into steps:
+ Add user/key, enable sudo on CentOS machines Add user/key, enable sudo on Debian machines Log in as user, remove root and password login  CentOS Here is the first play.</description>
+    </item>
+    
+  </channel>
+</rss>

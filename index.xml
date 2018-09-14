@@ -43,6 +43,18 @@ Bare metal hosts: A three-node Proxmox VE cluster running a GlusterFS cluster fo
     </item>
     
     <item>
+      <title>Hardening SSH With Ansible</title>
+      <link>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</guid>
+      <description>I&amp;rsquo;ve been using root login for Ansible for the first part of this project, in part because this is not a production environment, and in part to avoid too many confounding factors while learning Ansible.
+But it started to bug me. Check the relevant git commit here
+Overview This is a straightfoward task, but I broke it down into steps:
+ Add user/key, enable sudo on CentOS machines Add user/key, enable sudo on Debian machines Log in as user, remove root and password login  CentOS Here is the first play.</description>
+    </item>
+    
+    <item>
       <title>Ansible: Deploy VMs With PXE and Kickstart</title>
       <link>https://www.nathancurry.com/blog/22-ansible-pxeboot-vms/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
