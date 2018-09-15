@@ -5,10 +5,22 @@
     <link>https://www.nathancurry.com/categories/ansible/</link>
     <description>Recent content in Ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Sep 2018 18:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Organizing My Ansible Project Into Roles</title>
+      <link>https://www.nathancurry.com/blog/24-organizing-ansible-project-into-roles/</link>
+      <pubDate>Fri, 14 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/24-organizing-ansible-project-into-roles/</guid>
+      <description>Thus far, I&amp;rsquo;ve been writing ad hoc playbooks and learning how all the pieces go together. It&amp;rsquo;s been largely disorganized, and I&amp;rsquo;ve made some structural mistakes in the process.
+I wanted to take a moment to correct these mistakes, in the hopes of making further progress more efficient.
+Take a look at the relevant git commit here
+Overview I&amp;rsquo;m not going to go into every role in depth, but will pick one or two items I restructured.</description>
+    </item>
     
     <item>
       <title>Hardening SSH With Ansible</title>
