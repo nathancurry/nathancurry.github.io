@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openstack on Nathan Curry</title>
+    <link>https://www.nathancurry.com/categories/openstack/</link>
+    <description>Recent content in Openstack on Nathan Curry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/openstack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenStack Ansible Node Preparation, Part 1</title>
+      <link>https://www.nathancurry.com/blog/26-openstack-ansible-preparation/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/26-openstack-ansible-preparation/</guid>
+      <description>As I&amp;rsquo;ve been doing this other work, I&amp;rsquo;ve been reading about OpenStack and watching video presentations, and I deployed an AiO OpenStack VM with RDO. As things have progressed, I&amp;rsquo;ve encountered more and more ways in which Proxmox is deficient as a platform for automation.
+I decided that if I&amp;rsquo;m going to suffer endlessly at getting something to work, it should be something worthwhile like OpenStack. So here we are.</description>
+    </item>
+    
+  </channel>
+</rss>
