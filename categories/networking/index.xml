@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Nathan Curry</title>
+    <link>https://www.nathancurry.com/categories/networking/</link>
+    <description>Recent content in Networking on Nathan Curry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenStack Ansible Installation, Part 2</title>
+      <link>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</guid>
+      <description>The OpenStack Ansible project includes examples for network configurations on Ubuntu, but not on CentOS. This is that journey.
+Click here for this post&amp;rsquo;s git commit.
+Preamble I took the &amp;ldquo;Test&amp;rdquo; configuration examples, which use 3 nodes, and decided to build around that.
+My first failed attempt was to use the nmcli Ansible module. At the time of writing, I encountered a number of issues with this module on CentOS 7 with kernel-3.</description>
+    </item>
+    
+  </channel>
+</rss>

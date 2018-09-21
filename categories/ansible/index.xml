@@ -5,17 +5,29 @@
     <link>https://www.nathancurry.com/categories/ansible/</link>
     <description>Recent content in Ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>OpenStack Ansible Node Preparation, Part 1</title>
-      <link>https://www.nathancurry.com/blog/26-openstack-ansible-preparation/</link>
+      <title>OpenStack Ansible Installation, Part 2</title>
+      <link>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</guid>
+      <description>The OpenStack Ansible project includes examples for network configurations on Ubuntu, but not on CentOS. This is that journey.
+Click here for this post&amp;rsquo;s git commit.
+Preamble I took the &amp;ldquo;Test&amp;rdquo; configuration examples, which use 3 nodes, and decided to build around that.
+My first failed attempt was to use the nmcli Ansible module. At the time of writing, I encountered a number of issues with this module on CentOS 7 with kernel-3.</description>
+    </item>
+    
+    <item>
+      <title>OpenStack Ansible Installation, Part 1</title>
+      <link>https://www.nathancurry.com/blog/26-openstack-ansible-part1/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/blog/26-openstack-ansible-preparation/</guid>
+      <guid>https://www.nathancurry.com/blog/26-openstack-ansible-part1/</guid>
       <description>As I&amp;rsquo;ve been doing this other work, I&amp;rsquo;ve been reading about OpenStack and watching video presentations, and I deployed an AiO OpenStack VM with RDO. As things have progressed, I&amp;rsquo;ve encountered more and more ways in which Proxmox is deficient as a platform for automation.
 I decided that if I&amp;rsquo;m going to suffer endlessly at getting something to work, it should be something worthwhile like OpenStack. So here we are.</description>
     </item>

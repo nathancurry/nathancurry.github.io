@@ -5,7 +5,7 @@
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Ansible</title>
       <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/ansible/</guid>
       <description></description>
@@ -137,6 +137,15 @@
     </item>
     
     <item>
+      <title>Networking</title>
+      <link>https://www.nathancurry.com/categories/networking/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nfs</title>
       <link>https://www.nathancurry.com/categories/nfs/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
@@ -148,7 +157,7 @@
     <item>
       <title>Openstack</title>
       <link>https://www.nathancurry.com/categories/openstack/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/openstack/</guid>
       <description></description>
