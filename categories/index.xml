@@ -58,7 +58,7 @@
     <item>
       <title>Cisco</title>
       <link>https://www.nathancurry.com/categories/cisco/</link>
-      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/cisco/</guid>
       <description></description>
@@ -139,7 +139,7 @@
     <item>
       <title>Networking</title>
       <link>https://www.nathancurry.com/categories/networking/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/networking/</guid>
       <description></description>
@@ -157,7 +157,7 @@
     <item>
       <title>Openstack</title>
       <link>https://www.nathancurry.com/categories/openstack/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/openstack/</guid>
       <description></description>
@@ -250,6 +250,15 @@
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/categories/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vlan</title>
+      <link>https://www.nathancurry.com/categories/vlan/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/vlan/</guid>
       <description></description>
     </item>
     
