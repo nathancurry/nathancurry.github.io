@@ -5,10 +5,22 @@
     <link>https://www.nathancurry.com/categories/networking/</link>
     <description>Recent content in Networking on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.nathancurry.com/categories/networking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenStack Ansible Installation, Part 4</title>
+      <link>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</guid>
+      <description>In parts 1 through 3, I&amp;rsquo;ve prepared my hosts and network environment for a smooth deployment. Please see those previous articles if you are using this as a reference.
+Now comes the actual deployment.
+Overview Since this is my first OpenStack deployment (other than an AiO RDO deploy in a VM), I used the openstack-ansible &amp;ldquo;test&amp;rdquo; configuration so I could have a fairly complete, functional setup.
+To customize the install, you have to copy relevant files to /etc/openstack_deploy.</description>
+    </item>
     
     <item>
       <title>OpenStack Ansible Installation, Part 3</title>

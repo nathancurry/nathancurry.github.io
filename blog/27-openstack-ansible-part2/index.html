@@ -233,7 +233,7 @@ osa_host_id: <span style="color:#bd93f9">11</span></code></pre></div>
 <span style="color:#6272a4"># Included for ease of testing</span>
 ifcfg_dir: /etc/sysconfig/network-scripts
 
-<span style="color:#6272a4"># Secondary IP on br-mgmt on infra host</span>
+<span style="color:#6272a4"># Load balancer IP, on infra br-mgmt iface</span>
 ext_vip_ip: <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.10</span>
 
 <span style="color:#6272a4"># Network block</span>
@@ -245,8 +245,10 @@ osa_networks:
   - native: yes
     name: br-mgmt
     device: <span style="color:#f1fa8c">&#34;{{ netdev[0] }}&#34;</span>
+    <span style="color:#6272a4"># network variable is the net prefix to be applied to hosts</span>
+    <span style="color:#6272a4"># actual network here is 10.3.2.0/23</span>
     network: <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3</span>
-    cidr_prefix: <span style="color:#bd93f9">24</span>
+    cidr_prefix: <span style="color:#bd93f9">23</span>
     gw: <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.1</span>
     dns:
       - <span style="color:#bd93f9">10.3</span>.<span style="color:#bd93f9">3.1</span>
@@ -338,13 +340,14 @@ IPV6_FAILURE_FATAL=no
 IPV6_ADDR_GEN_MODE=stable-privacy
 ONBOOT=yes
 IPADDR={{ item.network }}.{{ osa_host_id }}
-PREFIX={{ item.cidr_prefix}}
+PREFIX={{ item.cidr_prefix }}
 GATEWAY={{ item.gw }}
 {% for object in item.dns %}
 DNS{{loop.index}}={{ object }}
 {% endfor %}
 {% if osa_deployhost is defined %}
 IPADDR2={{ ext_vip_ip }}
+PREFIX2={{  item.cidr_prefix }}
 {% endif %}</code></pre></div>
 <h1 id="conclusion">Conclusion</h1>
 

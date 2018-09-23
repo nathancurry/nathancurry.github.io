@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/blog/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,6 +23,11 @@
   
   <url>
     <loc>https://www.nathancurry.com/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -192,7 +197,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/cisco/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -250,7 +255,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/networking/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -266,7 +271,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/openstack/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -348,7 +353,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/categories/vlan/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
