@@ -1,13 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/</link>
     <description>Recent content in Categories on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Sep 2018 10:45:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>bash</title>
+      <title>Ansible</title>
+      <link>https://www.nathancurry.com/categories/ansible/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
       <link>https://www.nathancurry.com/categories/bash/</link>
       <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
       
@@ -16,43 +29,7 @@
     </item>
     
     <item>
-      <title>grep</title>
-      <link>https://www.nathancurry.com/categories/grep/</link>
-      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/grep/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scripting</title>
-      <link>https://www.nathancurry.com/categories/scripting/</link>
-      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/scripting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sed</title>
-      <link>https://www.nathancurry.com/categories/sed/</link>
-      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/sed/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ansible</title>
-      <link>https://www.nathancurry.com/categories/ansible/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/ansible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bind</title>
+      <title>Bind</title>
       <link>https://www.nathancurry.com/categories/bind/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -61,7 +38,34 @@
     </item>
     
     <item>
-      <title>dhcpd</title>
+      <title>Certifications</title>
+      <link>https://www.nathancurry.com/categories/certifications/</link>
+      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/certifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrony</title>
+      <link>https://www.nathancurry.com/categories/chrony/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/chrony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>https://www.nathancurry.com/categories/cisco/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dhcpd</title>
       <link>https://www.nathancurry.com/categories/dhcpd/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -70,34 +74,16 @@
     </item>
     
     <item>
-      <title>virtualization</title>
-      <link>https://www.nathancurry.com/categories/virtualization/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Freeipa</title>
+      <link>https://www.nathancurry.com/categories/freeipa/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/categories/virtualization/</guid>
+      <guid>https://www.nathancurry.com/categories/freeipa/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>iac</title>
-      <link>https://www.nathancurry.com/categories/iac/</link>
-      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/iac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>proxmox</title>
-      <link>https://www.nathancurry.com/categories/proxmox/</link>
-      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/categories/proxmox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>glusterfs</title>
+      <title>Glusterfs</title>
       <link>https://www.nathancurry.com/categories/glusterfs/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -106,16 +92,16 @@
     </item>
     
     <item>
-      <title>freeipa</title>
-      <link>https://www.nathancurry.com/categories/freeipa/</link>
-      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <title>Grep</title>
+      <link>https://www.nathancurry.com/categories/grep/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/categories/freeipa/</guid>
+      <guid>https://www.nathancurry.com/categories/grep/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>homelab</title>
+      <title>Homelab</title>
       <link>https://www.nathancurry.com/categories/homelab/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
@@ -124,16 +110,25 @@
     </item>
     
     <item>
-      <title>nfs</title>
-      <link>https://www.nathancurry.com/categories/nfs/</link>
-      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <title>Iac</title>
+      <link>https://www.nathancurry.com/categories/iac/</link>
+      <pubDate>Fri, 07 Sep 2018 18:00:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/categories/nfs/</guid>
+      <guid>https://www.nathancurry.com/categories/iac/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>kvm</title>
+      <title>Kickstart</title>
+      <link>https://www.nathancurry.com/categories/kickstart/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/kickstart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kvm</title>
       <link>https://www.nathancurry.com/categories/kvm/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
       
@@ -142,29 +137,128 @@
     </item>
     
     <item>
-      <title>certifications</title>
-      <link>https://www.nathancurry.com/categories/certifications/</link>
-      <pubDate>Wed, 29 Aug 2018 16:08:45 +0000</pubDate>
+      <title>Networking</title>
+      <link>https://www.nathancurry.com/categories/networking/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/categories/certifications/</guid>
+      <guid>https://www.nathancurry.com/categories/networking/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>cisco</title>
-      <link>https://www.nathancurry.com/categories/cisco/</link>
-      <pubDate>Wed, 29 Aug 2018 16:08:45 +0000</pubDate>
+      <title>Nfs</title>
+      <link>https://www.nathancurry.com/categories/nfs/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nathancurry.com/categories/cisco/</guid>
+      <guid>https://www.nathancurry.com/categories/nfs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>redhat</title>
+      <title>Openstack</title>
+      <link>https://www.nathancurry.com/categories/openstack/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>https://www.nathancurry.com/categories/proxmox/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pxe</title>
+      <link>https://www.nathancurry.com/categories/pxe/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/pxe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redhat</title>
       <link>https://www.nathancurry.com/categories/redhat/</link>
-      <pubDate>Mon, 20 Aug 2018 12:02:23 +0000</pubDate>
+      <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
       
       <guid>https://www.nathancurry.com/categories/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reposync</title>
+      <link>https://www.nathancurry.com/categories/reposync/</link>
+      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/reposync/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roles</title>
+      <link>https://www.nathancurry.com/categories/roles/</link>
+      <pubDate>Fri, 14 Sep 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/roles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripting</title>
+      <link>https://www.nathancurry.com/categories/scripting/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://www.nathancurry.com/categories/security/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sed</title>
+      <link>https://www.nathancurry.com/categories/sed/</link>
+      <pubDate>Tue, 11 Sep 2018 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/sed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>https://www.nathancurry.com/categories/ssh/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>https://www.nathancurry.com/categories/virtualization/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vlan</title>
+      <link>https://www.nathancurry.com/categories/vlan/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/categories/vlan/</guid>
       <description></description>
     </item>
     

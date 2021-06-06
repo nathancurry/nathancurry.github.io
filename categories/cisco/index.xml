@@ -1,20 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cisco on Nathan Curry</title>
+    <title>Cisco on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/cisco/</link>
-    <description>Recent content in cisco on Nathan Curry</description>
+    <description>Recent content in Cisco on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Aug 2018 16:08:45 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/cisco/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.nathancurry.com/categories/cisco/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenStack Ansible Installation, Part 4</title>
+      <link>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</guid>
+      <description>In parts 1 through 3, I&amp;rsquo;ve prepared my hosts and network environment for a smooth deployment. Please see those previous articles if you are using this as a reference.
+Now comes the actual deployment.
+Overview Since this is my first OpenStack deployment (other than an AiO RDO deploy in a VM), I used the openstack-ansible &amp;ldquo;test&amp;rdquo; configuration so I could have a fairly complete, functional setup.
+To customize the install, you have to copy relevant files to /etc/openstack_deploy.</description>
+    </item>
+    
+    <item>
+      <title>OpenStack Ansible Installation, Part 3</title>
+      <link>https://www.nathancurry.com/blog/28-openstack-ansible-part3/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nathancurry.com/blog/28-openstack-ansible-part3/</guid>
+      <description>Yesterday I configured the system network configuration on the OpenStack nodes, but I still have to configure VLAN access on the switch.
+Overview Each system has two NICs, in large part to keep storage traffic on its own collision domain. The vlans are assigned thusly:
+nic1: br-mgmt: purpose: &amp;#39;management traffic, admin&amp;#39; vlan: &amp;#39;native&amp;#39; network: &amp;#39;10.3.2.0/23&amp;#39; br-storage: purpose: &amp;#39;storage traffic&amp;#39; vlan: &amp;#39;5&amp;#39; network: &amp;#39;10.3.5.0/24&amp;#39; nic2: br-vlan: purpose: &amp;#39;non-tunneled virtual network&amp;#39; vlan: &amp;#39;native&amp;#39; network: &amp;#39;10.</description>
+    </item>
+    
     <item>
       <title>Cisco ICND1 Recap</title>
       <link>https://www.nathancurry.com/blog/05-icnd1-recap/</link>
-      <pubDate>Wed, 29 Aug 2018 16:08:45 +0000</pubDate>
+      <pubDate>Wed, 29 Aug 2018 16:08:45 -0600</pubDate>
       
       <guid>https://www.nathancurry.com/blog/05-icnd1-recap/</guid>
-      <description>I just tentatively passed the ICND1 with a 925/1000, and I&amp;rsquo;m pleased with my performance. Obviously, I am honor-bound (and perhaps more importantly, legally bound) to not discuss the exam contents.
+      <description>I just tentatively passed the ICND1 with a 925&amp;sol;1000, and I&amp;rsquo;m pleased with my performance. Obviously, I am honor-bound (and perhaps more importantly, legally bound) to not discuss the exam contents.
 Preparation I began studying in late April. At the suggestion of a family friend and retired CCIE, I worked off the following materials:
-  An all-in-one rack on eBay that had 3 1841 routers, 2 layer2 switches, and 1 layer3 switch for $300.</description>
+ An all-in-one rack on eBay that had 3 1841 routers, 2 layer2 switches, and 1 layer3 switch for $300.</description>
     </item>
     
     <item>
@@ -48,8 +75,7 @@ Lab 7  PC0 cannot ping PC1, can you fix it?
       <guid>https://www.nathancurry.com/blog/01-ccent-lab-notes-part-1/</guid>
       <description>This is a log of my work on the first 6 of these PackTracer labs for the ICND1 exam.
 SPOILERS FOLLOW!!! This is not a guide on how to approach the problems, it&amp;rsquo;s a review of completed work. This perhaps has educational merit, but please continue only after having completed the labs yourself.
-Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
- Yes, I can.</description>
+Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?</description>
     </item>
     
   </channel>

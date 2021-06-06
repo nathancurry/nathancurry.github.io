@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
+<html lang='en'>
+
+<head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Since streamlining my container deployment, I&rsquo;ve been working on automating a BIND deployment. I found this excellent role over at MangoLassi.it, and I&rsquo;m tailoring it to my needs.
@@ -15,23 +17,27 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-09T00:00:00Z'/><meta property='article:modified_time' content='2018-09-09T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.48" />
 
   <title>Generating BIND Config From Ansible hostvars • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/16-generating-bind-entries-from-ansible-hostvars/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
+
+
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -44,12 +50,10 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
     </div>
     
     <h2 class='title site-title '>
-      <a href='/'>
-      Nathan Curry
-      </a>
+    Nathan Curry
     </h2>
     <div class='desc'>
-    RHCA: Infrastructure Level III
+    Sysadmin, RHCSA, CCENT
     </div>
   </header>
 
@@ -57,35 +61,29 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 </div>
 
   <div class='sidebar-overlay'></div>
-</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="3" y1="12" x2="21" y2="12" />
-<line x1="3" y1="6" x2="21" y2="6" />
-<line x1="3" y1="18" x2="21" y2="18" />
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
 </svg>
 </span>
-  <span class='close'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="18" y1="6" x2="6" y2="18" />
-<line x1="6" y1="6" x2="18" y2="18" />
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
 </svg>
 </span>
 </button>
@@ -99,13 +97,11 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
         <a href=''></a>
       </li></ul>
   </div>
-</nav><div class='header-widgets'>
-        <div class='container'></div>
-      </div>
+</nav>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
           </div>
         </div>
       </header>
@@ -121,19 +117,15 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
       
 
     </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-<line x1="16" y1="2" x2="16" y2="6" />
-<line x1="8" y1="2" x2="8" y2="6" />
-<line x1="3" y1="10" x2="21" y2="10" />
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-09-09T00:00:00Z'>09 Sep 2018</time>
@@ -141,16 +133,11 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 
   
   
-<span class='reading-time'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><circle cx="12" cy="12" r="10" />
-<polyline points="12 6 12 12 15 15" />
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
 </svg>
 2 mins read
 </span>
@@ -169,29 +156,37 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
     <span>Table of Contents</span>
   </summary>
   <nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-fix">The fix</a></li>
-  </ul>
+<ul>
+<li><a href="#generating-based-on-hostvars">Generating based on hostvars</a>
+<ul>
+<li><a href="#the-fix">The fix</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
 </nav>
 </details>
 
 
   <div class='container entry-content'>
-  <p>Since streamlining my container deployment, I&rsquo;ve been working on automating a BIND deployment.  I found <a href="https://mangolassi.it/topic/12877/set-up-bind-server-with-ansible/6">this excellent role</a> over at MangoLassi.it, and I&rsquo;m tailoring it to my needs.</p>
+  
+
+<p>Since streamlining my container deployment, I&rsquo;ve been working on automating a BIND deployment.  I found <a href="https://mangolassi.it/topic/12877/set-up-bind-server-with-ansible/6">this excellent role</a> over at MangoLassi.it, and I&rsquo;m tailoring it to my needs.</p>
+
 <h1 id="generating-based-on-hostvars">Generating based on hostvars</h1>
+
 <p>For now, I&rsquo;m statically mapping IPs, MAC addresses, and a few other machine facts in host_vars, so that I have a defined infrastructure, even when the hosts don&rsquo;t exist.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#ff79c6">fqdn</span>: <span style="color:#f1fa8c">&#39;ns.lan.nathancurry.com&#39;</span>
-<span style="color:#ff79c6">ip_address</span>: <span style="color:#f1fa8c">&#39;10.3.3.2&#39;</span>
-<span style="color:#ff79c6">mac_address</span>: <span style="color:#f1fa8c">&#39;52:54:00:76:b4:78&#39;</span>
-<span style="color:#ff79c6">services</span>: [ <span style="color:#f1fa8c">&#39;dns&#39;</span>, <span style="color:#f1fa8c">&#39;dhcp&#39;</span> ]
-</code></pre></div><p>This allows me to keep key infrastructure facts in one place.   The only problem is his dictionary format uses a key for the hostname, which presents a roadblock.  His variables:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#ff79c6">records</span>:
-  <span style="color:#ff79c6">ns1</span>:
-    <span style="color:#ff79c6">forward</span>: <span style="color:#bd93f9">10.1.30.11</span>
-    <span style="color:#ff79c6">type</span>: A
-    <span style="color:#ff79c6">last</span>: <span style="color:#bd93f9">11</span>
-    <span style="color:#ff79c6">rev</span>: <span style="color:#bd93f9">30.1.10</span>.in-addr.arpa.
-</code></pre></div><p>His templates:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">fqdn: <span style="color:#f1fa8c">&#39;ns.lan.nathancurry.com&#39;</span>
+ip_address: <span style="color:#f1fa8c">&#39;10.3.3.2&#39;</span>
+mac_address: <span style="color:#f1fa8c">&#39;52:54:00:76:b4:78&#39;</span>
+services: [ <span style="color:#f1fa8c">&#39;dns&#39;</span>, <span style="color:#f1fa8c">&#39;dhcp&#39;</span> ]</code></pre></div>
+<p>This allows me to keep key infrastructure facts in one place.   The only problem is his dictionary format uses a key for the hostname, which presents a roadblock.  His variables:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">records:
+  ns1:
+    forward: <span style="color:#bd93f9">10.1</span>.<span style="color:#bd93f9">30.11</span>
+    type: A
+    last: <span style="color:#bd93f9">11</span>
+    rev: <span style="color:#bd93f9">30.1</span>.<span style="color:#bd93f9">10.</span>in-addr.arpa.</code></pre></div>
+<p>His templates:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja" data-lang="jinja"># forward
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">key</span><span style="color:#ff79c6">,</span> <span style="color:#8be9fd;font-style:italic">value</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">records.iteritems</span><span style="color:#ff79c6">()</span> <span style="color:#ff79c6">%}</span>
 <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">value.last</span> <span style="color:#ff79c6">}}</span>   PTR   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">value.rev</span> <span style="color:#ff79c6">}}</span>
@@ -200,22 +195,23 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 # reverse
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">key</span><span style="color:#ff79c6">,</span> <span style="color:#8be9fd;font-style:italic">value</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">records.iteritems</span><span style="color:#ff79c6">()</span> <span style="color:#ff79c6">%}</span>
 <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">key</span> <span style="color:#ff79c6">}}</span>   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">value.type</span> <span style="color:#ff79c6">}}</span>   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">value.forward</span> <span style="color:#ff79c6">}}</span>
-<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span>
-</code></pre></div><p>Called like so for the forward domain:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">- <span style="color:#ff79c6">name</span>: Copy forward file
-  <span style="color:#ff79c6">template</span>:
-    <span style="color:#ff79c6">src</span>: db.forward.j2
-    <span style="color:#ff79c6">dest</span>: /etc/named/zones/db.{{ domain }}
-    <span style="color:#ff79c6">owner</span>: root
-    <span style="color:#ff79c6">group</span>: named
-    <span style="color:#ff79c6">mode</span>: <span style="color:#bd93f9">0640</span>
-  <span style="color:#ff79c6">with_dict</span>: <span style="color:#f1fa8c">&#34;{{ records }}&#34;</span>
-  <span style="color:#ff79c6">notify</span>: restart named
-</code></pre></div><h2 id="the-fix">The fix</h2>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span></code></pre></div>
+<p>Called like so for the forward domain:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">- name: Copy forward file
+  template:
+    src: db.forward.j2
+    dest: /etc/named/zones/db.{{ domain }}
+    owner: root
+    group: named
+    mode: <span style="color:#bd93f9">0640</span>
+  with_dict: <span style="color:#f1fa8c">&#34;{{ records }}&#34;</span>
+  notify: restart named</code></pre></div>
+<h2 id="the-fix">The fix</h2>
+
 <p>I pull the list of hosts into a variable:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#6272a4"># vars.yml</span>
-<span style="color:#ff79c6">hostlist</span>: <span style="color:#f1fa8c">&#34;{{ groups[&#39;all&#39;] }}&#34;</span>
-</code></pre></div><p>And iterate against this list:</p>
+hostlist: <span style="color:#f1fa8c">&#34;{{ groups[&#39;all&#39;] }}&#34;</span></code></pre></div>
+<p>And iterate against this list:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jinja" data-lang="jinja"># forward
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">host</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">hostlist</span> <span style="color:#ff79c6">%}</span>
 <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">host</span> <span style="color:#ff79c6">}}</span>  IN  A  <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.ip_address</span> <span style="color:#ff79c6">}}</span>
@@ -224,27 +220,23 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 #reverse
 <span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">for</span> <span style="color:#8be9fd;font-style:italic">host</span> <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">hostlist</span> <span style="color:#ff79c6">%}</span>
 <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.ip_address</span><span style="color:#ff79c6">|</span><span style="color:#50fa7b">regex_replace</span><span style="color:#ff79c6">(</span><span style="color:#f1fa8c">&#39;10.3.3.&#39;</span><span style="color:#ff79c6">)</span> <span style="color:#ff79c6">}}</span>  IN   PTR   <span style="color:#ff79c6">{{</span> <span style="color:#8be9fd;font-style:italic">hostvars</span><span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">host</span><span style="color:#ff79c6">]</span><span style="color:#8be9fd;font-style:italic">.fqdn</span> <span style="color:#ff79c6">}}</span>.
-<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span>
-</code></pre></div><p>And commented out the now non-existent records variable:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#6272a4">#  with_dict: &#34;{{ records }}&#34;</span>
-</code></pre></div><h1 id="conclusion">Conclusion</h1>
+<span style="color:#ff79c6">{%</span> <span style="color:#ff79c6">endfor</span> <span style="color:#ff79c6">%}</span></code></pre></div>
+<p>And commented out the now non-existent records variable:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#6272a4">#  with_dict: &#34;{{ records }}&#34;</span></code></pre></div>
+<h1 id="conclusion">Conclusion</h1>
+
 <p>It now iterates through my hosts and pulls the variables I need.  I had to make a few more minor edits to his templates. You can see the entire project at my <a href="https://www.github.com/nathancurry/homelab.ansible">github project</a></p>
 
 </div>
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/ansible/'>ansible</a>, <a class='category' href='/categories/dhcpd/'>dhcpd</a>, <a class='category' href='/categories/bind/'>bind</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/ansible/'>Ansible</a>, <a class='category' href='/categories/dhcpd/'>Dhcpd</a>, <a class='category' href='/categories/bind/'>Bind</a></div>
 
   </div>
 </footer>
@@ -255,31 +247,21 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/15-customize-lxc-container-template-on-proxmox/'>
-        <span aria-hidden='true'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="20" y1="12" x2="4" y2="12" />
-<polyline points="10 18 4 12 10 6" />
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
 </svg>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Customize a CentOS LXC Container with Proxmox</a>
     </div><div class='next-entry sep-before'>
       <a href='/blog/17-ansible-workflow-deploying-dns-dhcp/'>
-        <span class='screen-reader-text'>Next post: </span>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair<span aria-hidden='true'>Next <svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="4" y1="12" x2="20" y2="12" />
-<polyline points="14 6 20 12 14 18" />
+        <span class='screen-reader-text'>Next post: </span>Ansible: Deploy DNS/DHCP Failover Pair<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
 </svg>
 </span>
       </a>
@@ -294,73 +276,53 @@ fqdn: &#39;ns.lan.nathancurry.com&#39; ip_address: &#39;10.3.3.2&#39; mac_addres
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Contact via Email</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-<polyline points="22,6 12,13 2,6" />
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-<rect x="2" y="9" width="4" height="12" />
-<circle cx="4" cy="4" r="2" />
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
 
 </body>
 

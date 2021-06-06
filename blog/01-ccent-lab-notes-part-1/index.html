@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
+<html lang='en'>
+
+<head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='This is a log of my work on the first 6 of these PackTracer labs for the ICND1 exam.
 SPOILERS FOLLOW!!! This is not a guide on how to approach the problems, it&rsquo;s a review of completed work. This perhaps has educational merit, but please continue only after having completed the labs yourself.
-Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
- Yes, I can.'>
+Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?'>
 <meta name='theme-color' content='#de7040'>
 
 <meta property='og:title' content='CCENT Lab Notes, Part 1 • Nathan Curry'>
 <meta property='og:description' content='This is a log of my work on the first 6 of these PackTracer labs for the ICND1 exam.
 SPOILERS FOLLOW!!! This is not a guide on how to approach the problems, it&rsquo;s a review of completed work. This perhaps has educational merit, but please continue only after having completed the labs yourself.
-Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
- Yes, I can.'>
+Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?'>
 <meta property='og:url' content='https://www.nathancurry.com/blog/01-ccent-lab-notes-part-1/'>
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.nathancurry.com/i/labs/lab1.png'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-08-19T00:00:00Z'/><meta property='article:modified_time' content='2018-08-19T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.48" />
 
   <title>CCENT Lab Notes, Part 1 • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/01-ccent-lab-notes-part-1/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
+
+
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -46,12 +50,10 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
     </div>
     
     <h2 class='title site-title '>
-      <a href='/'>
-      Nathan Curry
-      </a>
+    Nathan Curry
     </h2>
     <div class='desc'>
-    RHCA: Infrastructure Level III
+    Sysadmin, RHCSA, CCENT
     </div>
   </header>
 
@@ -59,35 +61,29 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
 </div>
 
   <div class='sidebar-overlay'></div>
-</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="3" y1="12" x2="21" y2="12" />
-<line x1="3" y1="6" x2="21" y2="6" />
-<line x1="3" y1="18" x2="21" y2="18" />
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
 </svg>
 </span>
-  <span class='close'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="18" y1="6" x2="6" y2="18" />
-<line x1="6" y1="6" x2="18" y2="18" />
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
 </svg>
 </span>
 </button>
@@ -101,13 +97,11 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
         <a href=''></a>
       </li></ul>
   </div>
-</nav><div class='header-widgets'>
-        <div class='container'></div>
-      </div>
+</nav>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
           </div>
         </div>
       </header>
@@ -123,19 +117,15 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
       
 
     </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-<line x1="16" y1="2" x2="16" y2="6" />
-<line x1="8" y1="2" x2="8" y2="6" />
-<line x1="3" y1="10" x2="21" y2="10" />
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-08-19T00:00:00Z'>19 Aug 2018</time>
@@ -143,16 +133,11 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
 
   
   
-<span class='reading-time'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><circle cx="12" cy="12" r="10" />
-<polyline points="12 6 12 12 15 15" />
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
 </svg>
 3 mins read
 </span>
@@ -168,97 +153,119 @@ Lab 1  Switch0 is configured as DHCP server but not working. Can you fix it?
   
 
   <div class='container entry-content'>
-  <p>This is a log of my work on the first 6 of <a href="https://learningnetwork.cisco.com/docs/DOC-25716">these PackTracer labs for the ICND1 exam.</a></p>
+  
+
+<p>This is a log of my work on the first 6 of <a href="https://learningnetwork.cisco.com/docs/DOC-25716">these PackTracer labs for the ICND1 exam.</a></p>
+
 <p><strong>SPOILERS FOLLOW!!!</strong> This is not a guide on how to approach the problems, it&rsquo;s a review of completed work.  This perhaps has educational merit, but please continue only after having completed the labs yourself.</p>
+
 <h1 id="lab-1">Lab 1</h1>
+
 <blockquote>
 <p>Switch0 is configured as DHCP server but not working. Can you fix it?</p>
 </blockquote>
-<p><img src="/i/labs/lab1.png" alt="Lab 1"></p>
+
+<p><img src="/i/labs/lab1.png" alt="Lab 1" /></p>
+
 <p>Yes, I can. The goal is to get PC-PT to pull a DHCP lease.  There were multiple VLANs, isolating Switch0 from PC-PT.  There are three possible solutions:</p>
+
 <ol>
 <li>Configure the switch with a VLAN interface on the same VLAN as the PC</li>
 <li>Configure a DHCP relay on the router, and fix the default gateway for the switch</li>
 </ol>
+
 <p>Both would work, but since we have to assume the VLANs are there for a reason, I went with #2:</p>
+
 <h2 id="on-switch0">On Switch0:</h2>
-<pre><code class="language-cisco" data-lang="cisco">Switch&gt;en
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Switch&gt;en
 Switch#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 Switch(config)#ip default-gateway 172.16.0.1
 Switch(config)#ip dhcp pool accounts
 Switch(dhcp-config)#dns-server 192.168.0.1
-Switch(dhcp-config)#end
-</code></pre><h2 id="on-r1">On R1:</h2>
-<pre><code class="language-cisco" data-lang="cisco">R1&gt;en
+Switch(dhcp-config)#end</code></pre></div>
+<h2 id="on-r1">On R1:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">R1&gt;en
 R1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 R1(config)#int f0/1.10
 R1(config-subif)#ip helper-address 172.20.0.2
-R1(config-subif)#end
-</code></pre><h1 id="lab-2">Lab 2</h1>
+R1(config-subif)#end</code></pre></div>
+<h1 id="lab-2">Lab 2</h1>
+
 <blockquote>
 <p>PC0 can&rsquo;t ping PC1</p>
 </blockquote>
-<p><img src="/i/labs/lab2.png" alt="Lab 2"></p>
+
+<p><img src="/i/labs/lab2.png" alt="Lab 2" /></p>
+
 <p>First, I verify that each PC has correct IP settings, by issuing an <code>ipconfig</code>.  Then, I check if they can ping their routers.</p>
+
 <p>On the routers, I verify interface IPs and routes:</p>
-<pre><code class="language-cisco" data-lang="cisco">Router#show ip int brief
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Router#show ip int brief
 !
-Router#show ip route
-</code></pre><p>The route for the 172.20.0.1/24 subnet isn&rsquo;t propagating.  A <code>show run</code> indicates that the network command for that subnet was incorrect, referencing the .2 address instead of the router&rsquo;s if address.</p>
+Router#show ip route</code></pre></div>
+<p>The route for the 172.20.0.<sup>1</sup>&frasl;<sub>24</sub> subnet isn&rsquo;t propagating.  A <code>show run</code> indicates that the network command for that subnet was incorrect, referencing the .2 address instead of the router&rsquo;s if address.</p>
+
 <h2 id="on-r1-1">On R1</h2>
-<pre><code class="language-cisco" data-lang="cisco">R1(config)#router ospf 1
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">R1(config)#router ospf 1
 R1(config-router)#no network 172.20.0.2 0.0.0.0 area 0
-R1(config-router)#network 172.20.0.1 0.0.0.0 area 0
-</code></pre><p>Routes are propagating, and ping is working.</p>
+R1(config-router)#network 172.20.0.1 0.0.0.0 area 0</code></pre></div>
+<p>Routes are propagating, and ping is working.</p>
+
 <h1 id="lab-3">Lab 3</h1>
+
 <blockquote>
 <p>PC0 can&rsquo;t ping PC1</p>
 </blockquote>
+
 <p>This is almost exactly the same as the previous lab.  I started with the same process.  This time, PC1 can&rsquo;t ping its router IP <code>172.20.2.1</code>.  I verified that PC0 can ping PC1&rsquo;s router interface, so that isolates the problem a bit.  I checked the switches, and they were in their default configuration with good connectivity.</p>
+
 <p>In looking at R3, I noticed that the subnet mask was mistakenly set to /25, putting the PC out of range.  It was readily fixed with:</p>
-<pre><code class="language-cisco" data-lang="cisco">R3(config)#int f0/0
-R3(config-if)#ip address 172.20.2.1 255.255.255.0`
-</code></pre><h1 id="lab-4">Lab 4</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">R3(config)#int f0/0
+R3(config-if)#ip address 172.20.2.1 255.255.255.0`</code></pre></div>
+<h1 id="lab-4">Lab 4</h1>
+
 <p>Same premise.  Immediately, I verify that PC0 can&rsquo;t ping the outside interface of R2 (though it turns out this was apparently due to pinging before the network came fully online). I also verify that PC1 can&rsquo;t ping its own router.</p>
+
 <p>Switch2 showed a sad connection light.  I logged into Switch2 and Switch3, and found that trunking was enabled on the Switch2 link, but not the Switch3 link.</p>
+
 <h2 id="on-switch3">On Switch3</h2>
-<pre><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
 Switch(config-if)#switch
-Switch(config-if)#switchport mode trunk`
-</code></pre><p>Now PC1 is pinging its router, and is able to ping PC0.</p>
+Switch(config-if)#switchport mode trunk`</code></pre></div>
+<p>Now PC1 is pinging its router, and is able to ping PC0.</p>
+
 <h1 id="lab-5">Lab 5</h1>
+
 <p>This time, I waited for the network to come up.  PC1 can ping PC0&rsquo;s router, PC0 cannot.  Fa0/24 on Switch1, which PC0 is connected to, is down/down.  A <code>sh run</code> indicates that the port is shutdown due to a MAC address conflict in port security.</p>
+
 <h2 id="on-switch1">On Switch1</h2>
-<pre><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
 Switch(config-if)#no switchport port-security mac-address 000A.000B.000C
 ! and since I assume port-security was intentionally configured
-Switch(config-if)#switchport port-security mac-address sticky
-</code></pre><p>If this were production, I would have hard-coded the MAC to match the existing config.</p>
+Switch(config-if)#switchport port-security mac-address sticky</code></pre></div>
+<p>If this were production, I would have hard-coded the MAC to match the existing config.</p>
+
 <h1 id="lab-6">Lab 6</h1>
+
 <p>What is it with these guys and pinging?  The issue is again between PC1 and its default router.  Apparently, I should have been reading the logs when I open the device CLIs, because I was greeted with this on Switch2:</p>
-<pre><code class="language-cisco" data-lang="cisco">%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/24 (20), with Switch FastEthernet0/24 (10).
-</code></pre><p>Easy.  I checked the running-config to verify, and then issued:</p>
-<pre><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
-Switch(config-if)#switchport trunk native vlan 10}}
-</code></pre><p>After waiting about 30 seconds, ping began working.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/24 (20), with Switch FastEthernet0/24 (10).</code></pre></div>
+<p>Easy.  I checked the running-config to verify, and then issued:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Switch(config)#int f0/24
+Switch(config-if)#switchport trunk native vlan 10}}</code></pre></div>
+<p>After waiting about 30 seconds, ping began working.</p>
 
 </div>
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/certifications/'>certifications</a>, <a class='category' href='/categories/cisco/'>cisco</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/certifications/'>Certifications</a>, <a class='category' href='/categories/cisco/'>Cisco</a></div>
 
   </div>
 </footer>
@@ -269,16 +276,11 @@ Switch(config-if)#switchport trunk native vlan 10}}
 <nav class='entry-nav'>
   <div class='container'><div class='next-entry sep-before'>
       <a href='/blog/04-ex200-recap/'>
-        <span class='screen-reader-text'>Next post: </span>Red Hat EX200 Recap<span aria-hidden='true'>Next <svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="4" y1="12" x2="20" y2="12" />
-<polyline points="14 6 20 12 14 18" />
+        <span class='screen-reader-text'>Next post: </span>Red Hat EX200 Recap<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
 </svg>
 </span>
       </a>
@@ -293,73 +295,53 @@ Switch(config-if)#switchport trunk native vlan 10}}
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Contact via Email</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-<polyline points="22,6 12,13 2,6" />
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-<rect x="2" y="9" width="4" height="12" />
-<circle cx="4" cy="4" r="2" />
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
 
 </body>
 
