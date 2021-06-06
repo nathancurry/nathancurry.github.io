@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
+<html lang='en'>
+
+<head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Using &#39;sed&#39;, &#39;grep&#39;, and &#39;for&#39;'>
@@ -11,23 +13,27 @@
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-11T10:45:00Z'/><meta property='article:modified_time' content='2018-09-11T10:45:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.48" />
 
   <title>String Replacement With Shell One-Liners • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/18-shell-one-liners-for-string-replacement/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
+
+
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -40,12 +46,10 @@
     </div>
     
     <h2 class='title site-title '>
-      <a href='/'>
-      Nathan Curry
-      </a>
+    Nathan Curry
     </h2>
     <div class='desc'>
-    RHCA: Infrastructure Level III
+    Sysadmin, RHCSA, CCENT
     </div>
   </header>
 
@@ -53,35 +57,29 @@
 </div>
 
   <div class='sidebar-overlay'></div>
-</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="3" y1="12" x2="21" y2="12" />
-<line x1="3" y1="6" x2="21" y2="6" />
-<line x1="3" y1="18" x2="21" y2="18" />
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
 </svg>
 </span>
-  <span class='close'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="18" y1="6" x2="6" y2="18" />
-<line x1="6" y1="6" x2="18" y2="18" />
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
 </svg>
 </span>
 </button>
@@ -95,13 +93,11 @@
         <a href=''></a>
       </li></ul>
   </div>
-</nav><div class='header-widgets'>
-        <div class='container'></div>
-      </div>
+</nav>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
           </div>
         </div>
       </header>
@@ -119,19 +115,15 @@
 
 
     </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-<line x1="16" y1="2" x2="16" y2="6" />
-<line x1="8" y1="2" x2="8" y2="6" />
-<line x1="3" y1="10" x2="21" y2="10" />
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-09-11T10:45:00Z'>11 Sep 2018</time>
@@ -139,16 +131,11 @@
 
   
   
-<span class='reading-time'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><circle cx="12" cy="12" r="10" />
-<polyline points="12 6 12 12 15 15" />
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
 </svg>
 3 mins read
 </span>
@@ -167,55 +154,72 @@
     <span>Table of Contents</span>
   </summary>
   <nav id="TableOfContents">
-  <ul>
-    <li><a href="#get-rid-of-fqdn-variable">Get rid of FQDN variable</a></li>
-    <li><a href="#replace-ip_address-variable">Replace ip_address variable</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#fix-hostnames">Fix hostnames</a></li>
-  </ul>
+<ul>
+<li><a href="#rename-inventory">Rename inventory</a></li>
+<li><a href="#clean-up-hostvars">Clean up hostvars</a>
+<ul>
+<li><a href="#get-rid-of-fqdn-variable">Get rid of FQDN variable</a></li>
+<li><a href="#replace-ip-address-variable">Replace ip_address variable</a></li>
+</ul></li>
+<li><a href="#clean-up-the-project">Clean up the project</a>
+<ul>
+<li><a href="#fix-hostnames">Fix hostnames</a></li>
+</ul></li>
+</ul>
 </nav>
 </details>
 
 
   <div class='container entry-content'>
-  <p>I&rsquo;m about to start working on installing FreeIPA servers, and I need to make a few small changes to variables as stored.  The most efficient way was to use a few one-liners.</p>
+  
+
+<p>I&rsquo;m about to start working on installing FreeIPA servers, and I need to make a few small changes to variables as stored.  The most efficient way was to use a few one-liners.</p>
+
 <h1 id="rename-inventory">Rename inventory</h1>
+
 <p>I want to rename all ansible hosts as their FQDN.  I attack the ini-style inventory file like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/ $ sed -i <span style="color:#f1fa8c">&#34;s/[a-z1-9]</span>$<span style="color:#f1fa8c">/&amp;.lan.nathancurry.com/&#34;</span> inventory
-</code></pre></div><p>This simply matches each line that ends in either a letter or a number, and appends (the &amp; operator) the rest of the FQDN.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/ $ sed -i <span style="color:#f1fa8c">&#34;s/[a-z1-9]</span>$<span style="color:#f1fa8c">/&amp;.lan.nathancurry.com/&#34;</span> inventory</code></pre></div>
+<p>This simply matches each line that ends in either a letter or a number, and appends (the &amp; operator) the rest of the FQDN.</p>
+
 <h1 id="clean-up-hostvars">Clean up hostvars</h1>
+
 <p>First, I needed to rename the files so they match the names in my new inventory file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ <span style="color:#ff79c6">for</span> i in <span style="color:#f1fa8c">`</span>ls<span style="color:#f1fa8c">`</span>; <span style="color:#ff79c6">do</span> mv <span style="color:#8be9fd;font-style:italic">$i</span> <span style="color:#8be9fd;font-style:italic">$i</span>.lan.nathancurry.com; <span style="color:#ff79c6">done</span>
-</code></pre></div><p>This takes the output of the ls command and pipes that into a script, renaming each file to append the FQDN.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ <span style="color:#ff79c6">for</span> i in <span style="color:#f1fa8c">`</span>ls<span style="color:#f1fa8c">`</span>; <span style="color:#ff79c6">do</span> mv <span style="color:#8be9fd;font-style:italic">$i</span> <span style="color:#8be9fd;font-style:italic">$i</span>.lan.nathancurry.com; <span style="color:#ff79c6">done</span></code></pre></div>
+<p>This takes the output of the ls command and pipes that into a script, renaming each file to append the FQDN.</p>
+
 <h2 id="get-rid-of-fqdn-variable">Get rid of FQDN variable</h2>
+
 <p>Since I&rsquo;m using FQDNs for ansible host names, this is no longer necessary.  I delete the FQDN line like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ sed -i <span style="color:#f1fa8c">&#39;/^fqdn/d&#39;</span> *
-</code></pre></div><p>The operator <code>d</code> deletes the match, which is any line beginning with <code>fqdn</code></p>
-<h2 id="replace-ip_address-variable">Replace ip_address variable</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ sed -i <span style="color:#f1fa8c">&#39;/^fqdn/d&#39;</span> *</code></pre></div>
+<p>The operator <code>d</code> deletes the match, which is any line beginning with <code>fqdn</code></p>
+
+<h2 id="replace-ip-address-variable">Replace ip_address variable</h2>
+
 <p>This variable isn&rsquo;t ansible best practices.  It is recommended that you use FQDN for hostnames, and use the <code>ansible_host</code> fact to store the IP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ sed -i <span style="color:#f1fa8c">&#39;s/ip_address/ansible_host/&#39;</span> *
-</code></pre></div><h1 id="clean-up-the-project">Clean up the project</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/host_vars $ sed -i <span style="color:#f1fa8c">&#39;s/ip_address/ansible_host/&#39;</span> *</code></pre></div>
+<h1 id="clean-up-the-project">Clean up the project</h1>
+
 <p>In the interest of not making any stupid life-altering mistakes, I&rsquo;m taking this one rather easy.  For example with the ip_address field, I locate where it exists in my project using grep:</p>
-<pre><code class="language-bash:" data-lang="bash:">nc@tiny: ~/0/homelab.ansible $ grep -r ip_address
-roles/proxmox/tasks/deploy_containers.yml:      netif: &quot;{{ '{\&quot;net0\&quot;:\&quot;name=eth0,type=veth,bridge=vmbr0,ip6=auto,gw=10.3.3.1,hwaddr=' + hostvars[item].mac_address + ',ip=' + hostvars[item].ip_address + '/25\&quot;}' | default(defaults.netif) }}&quot;
-roles/bind/templates/named.conf.local.j2:  allow-update-forwarding {127.0.0.1; {{ hostvars['ns1'].ip_address }}; {{ hostvars['ns2'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  allow-notify { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  allow-transfer { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  masters { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  allow-update-forwarding {127.0.0.1; {{ hostvars['ns1'].ip_address }}; {{ hostvars['ns2'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  allow-notify { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  allow-transfer { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/named.conf.local.j2:  masters { {{ hostvars['ns1'].ip_address }}; };
-roles/bind/templates/db.reverse.j2:{{ hostvars[host].ip_address|regex_replace('10.3.3.') }}  IN   PTR   {{ hostvars[host].fqdn }}.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash:" data-lang="bash:">nc@tiny: ~/0/homelab.ansible $ grep -r ip_address
+roles/proxmox/tasks/deploy_containers.yml:      netif: &#34;{{ &#39;{\&#34;net0\&#34;:\&#34;name=eth0,type=veth,bridge=vmbr0,ip6=auto,gw=10.3.3.1,hwaddr=&#39; + hostvars[item].mac_address + &#39;,ip=&#39; + hostvars[item].ip_address + &#39;/25\&#34;}&#39; | default(defaults.netif) }}&#34;
+roles/bind/templates/named.conf.local.j2:  allow-update-forwarding {127.0.0.1; {{ hostvars[&#39;ns1&#39;].ip_address }}; {{ hostvars[&#39;ns2&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  allow-notify { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  allow-transfer { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  masters { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  allow-update-forwarding {127.0.0.1; {{ hostvars[&#39;ns1&#39;].ip_address }}; {{ hostvars[&#39;ns2&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  allow-notify { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  allow-transfer { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/named.conf.local.j2:  masters { {{ hostvars[&#39;ns1&#39;].ip_address }}; };
+roles/bind/templates/db.reverse.j2:{{ hostvars[host].ip_address|regex_replace(&#39;10.3.3.&#39;) }}  IN   PTR   {{ hostvars[host].fqdn }}.
 roles/bind/templates/db.forward.j2:{{ host }}  IN  A  {{ hostvars[host].ip_address }}
-roles/bind/vars/main.yml:#   forward': hostvars[item].ip_address
-roles/bind/vars/main.yml:#   last': hostvars[item].ip_address|regex_replace('10.3.3.')
-</code></pre><p>And so on.  All the matches in the bind role are what I want, so I move into the bind directory and run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/roles/bind $ sed -i <span style="color:#f1fa8c">&#39;s/ip_address/ansible_host/g&#39;</span> */*
-</code></pre></div><p>The globs are dangerous in uncontrolled situations but they work well here.  The <code>g</code> at the end of the line means sed will match multiple occurrences of the same string in any given line.</p>
+roles/bind/vars/main.yml:#   forward&#39;: hostvars[item].ip_address
+roles/bind/vars/main.yml:#   last&#39;: hostvars[item].ip_address|regex_replace(&#39;10.3.3.&#39;)</code></pre></div>
+<p>And so on.  All the matches in the bind role are what I want, so I move into the bind directory and run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/roles/bind $ sed -i <span style="color:#f1fa8c">&#39;s/ip_address/ansible_host/g&#39;</span> */*</code></pre></div>
+<p>The globs are dangerous in uncontrolled situations but they work well here.  The <code>g</code> at the end of the line means sed will match multiple occurrences of the same string in any given line.</p>
+
 <h2 id="fix-hostnames">Fix hostnames</h2>
+
 <p>Now I just need to change the hostnames to the FQDN, which is the same as above.  The only thing I ran into was that I used for example a <code>dhcp_ns1</code> variable:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/roles/dhcpd $ grep -re <span style="color:#f1fa8c">&#39;ns[12]&#39;</span>
 templates/dhcpd.conf.j2:  address <span style="color:#ff79c6">{{</span> hostvars<span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;ns1&#39;</span><span style="color:#ff79c6">]</span>.ansible_host <span style="color:#ff79c6">}}</span>;
@@ -226,8 +230,8 @@ templates/dhcpd.conf.j2:  primary <span style="color:#ff79c6">{{</span> hostvars
 templates/dhcpd.conf.j2:  primary <span style="color:#ff79c6">{{</span> hostvars<span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;ns1&#39;</span><span style="color:#ff79c6">]</span>.ansible_host <span style="color:#ff79c6">}}</span>;
 templates/dhcpd.conf.j2:  option domain-name-servers <span style="color:#ff79c6">{{</span> dhcp_ns1 <span style="color:#ff79c6">}}</span>, <span style="color:#ff79c6">{{</span> dhcp_ns2 <span style="color:#ff79c6">}}</span>;
 vars/main.yml:dhcp_ns1: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns1&#39;].ansible_host }}&#34;</span>
-vars/main.yml:dhcp_ns2: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns2&#39;].ansible_host }}&#34;</span>
-</code></pre></div><p>So I expand the matching to include the opening quote, and before committing, I pipe it through grep again to double check my work:</p>
+vars/main.yml:dhcp_ns2: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns2&#39;].ansible_host }}&#34;</span></code></pre></div>
+<p>So I expand the matching to include the opening quote, and before committing, I pipe it through grep again to double check my work:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~/0/homelab.ansible/roles/dhcpd $ sed <span style="color:#f1fa8c">&#34;s/&#39;ns[12]/&amp;.lan.nathancurry.com/g&#34;</span> */* | grep <span style="color:#f1fa8c">&#39;ns[12]&#39;</span>
   address <span style="color:#ff79c6">{{</span> hostvars<span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;ns1.lan.nathancurry.com&#39;</span><span style="color:#ff79c6">]</span>.ansible_host <span style="color:#ff79c6">}}</span>;
   peer address <span style="color:#ff79c6">{{</span> hostvars<span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;ns2.lan.nathancurry.com&#39;</span><span style="color:#ff79c6">]</span>.ansible_host <span style="color:#ff79c6">}}</span>;
@@ -238,23 +242,17 @@ vars/main.yml:dhcp_ns2: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns2&#3
   option domain-name-servers <span style="color:#ff79c6">{{</span> dhcp_ns1 <span style="color:#ff79c6">}}</span>, <span style="color:#ff79c6">{{</span> dhcp_ns2 <span style="color:#ff79c6">}}</span>;
 dhcp_ns1: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns1.lan.nathancurry.com&#39;].ansible_host }}&#34;</span>
 dhcp_ns2: <span style="color:#f1fa8c">&#34;{{ hostvars[&#39;ns2.lan.nathancurry.com&#39;].ansible_host }}&#34;</span>
-nc@tiny: ~/0/homelab.ansible/roles/dhcpd $
-</code></pre></div>
+nc@tiny: ~/0/homelab.ansible/roles/dhcpd $</code></pre></div>
 </div>
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/scripting/'>scripting</a>, <a class='category' href='/categories/sed/'>sed</a>, <a class='category' href='/categories/bash/'>bash</a>, <a class='category' href='/categories/grep/'>grep</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/scripting/'>Scripting</a>, <a class='category' href='/categories/sed/'>Sed</a>, <a class='category' href='/categories/bash/'>Bash</a>, <a class='category' href='/categories/grep/'>Grep</a></div>
 
   </div>
 </footer>
@@ -265,19 +263,24 @@ nc@tiny: ~/0/homelab.ansible/roles/dhcpd $
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/17-ansible-workflow-deploying-dns-dhcp/'>
-        <span aria-hidden='true'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="20" y1="12" x2="4" y2="12" />
-<polyline points="10 18 4 12 10 6" />
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
 </svg>
  Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</a>
+        <span class='screen-reader-text'>Previous post: </span>Ansible: Deploy DNS/DHCP Failover Pair</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/blog/19-ansible-role-for-local-repo/'>
+        <span class='screen-reader-text'>Next post: </span>Ansible Role For Local Repo<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
     </div></div>
 </nav>
 
@@ -289,73 +292,53 @@ nc@tiny: ~/0/homelab.ansible/roles/dhcpd $
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Contact via Email</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-<polyline points="22,6 12,13 2,6" />
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-<rect x="2" y="9" width="4" height="12" />
-<circle cx="4" cy="4" r="2" />
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
 
 </body>
 

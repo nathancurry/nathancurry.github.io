@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
+<html lang='en'>
+
+<head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='SSH should be on by default'>
@@ -11,23 +13,27 @@
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-08T00:00:00Z'/><meta property='article:modified_time' content='2018-09-08T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.48" />
 
   <title>Customize a CentOS LXC Container with Proxmox • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/15-customize-lxc-container-template-on-proxmox/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
+
+
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -40,12 +46,10 @@
     </div>
     
     <h2 class='title site-title '>
-      <a href='/'>
-      Nathan Curry
-      </a>
+    Nathan Curry
     </h2>
     <div class='desc'>
-    RHCA: Infrastructure Level III
+    Sysadmin, RHCSA, CCENT
     </div>
   </header>
 
@@ -53,35 +57,29 @@
 </div>
 
   <div class='sidebar-overlay'></div>
-</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="3" y1="12" x2="21" y2="12" />
-<line x1="3" y1="6" x2="21" y2="6" />
-<line x1="3" y1="18" x2="21" y2="18" />
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
 </svg>
 </span>
-  <span class='close'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="18" y1="6" x2="6" y2="18" />
-<line x1="6" y1="6" x2="18" y2="18" />
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
 </svg>
 </span>
 </button>
@@ -95,13 +93,11 @@
         <a href=''></a>
       </li></ul>
   </div>
-</nav><div class='header-widgets'>
-        <div class='container'></div>
-      </div>
+</nav>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
           </div>
         </div>
       </header>
@@ -119,19 +115,15 @@
 
 
     </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-<line x1="16" y1="2" x2="16" y2="6" />
-<line x1="8" y1="2" x2="8" y2="6" />
-<line x1="3" y1="10" x2="21" y2="10" />
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-09-08T00:00:00Z'>08 Sep 2018</time>
@@ -139,16 +131,11 @@
 
   
   
-<span class='reading-time'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><circle cx="12" cy="12" r="10" />
-<polyline points="12 6 12 12 15 15" />
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
 </svg>
 2 mins read
 </span>
@@ -166,41 +153,54 @@
   <summary class='title'>
     <span>Table of Contents</span>
   </summary>
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#create-and-connect-to-the-container">Create and connect to the container</a></li>
+<li><a href="#make-desired-changes">Make desired changes</a></li>
+<li><a href="#roll-it-back-up">Roll it back up</a></li>
+</ul>
+</nav>
 </details>
 
 
   <div class='container entry-content'>
-  <p>The CentOS-based container template provided by Proxmox doesn&rsquo;t have SSH installed, which makes it fairly useless for Ansible-based deployments.</p>
+  
+
+<p>The CentOS-based container template provided by Proxmox doesn&rsquo;t have SSH installed, which makes it fairly useless for Ansible-based deployments.</p>
+
 <p>Here are the steps to update and reroll a template:</p>
+
 <h1 id="create-and-connect-to-the-container">Create and connect to the container</h1>
+
 <p>The web UI is easy and fills out important info for you, but I created it through the CLI using a template I had preloaded.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@gold:~# pct create <span style="color:#bd93f9">105</span> gluster:vztmpl/centos-7-default_20171212_amd64.tar.xz --storage local-lvm --net0 <span style="color:#8be9fd;font-style:italic">name</span><span style="color:#ff79c6">=</span>eth0,ip<span style="color:#ff79c6">=</span>dhcp,ip6<span style="color:#ff79c6">=</span>dhcp,bridge<span style="color:#ff79c6">=</span>vmbr0 --password<span style="color:#ff79c6">=</span>password
 root@gold:~# pct start <span style="color:#bd93f9">105</span>
-root@gold:~# pct console <span style="color:#bd93f9">105</span>
-</code></pre></div><h1 id="make-desired-changes">Make desired changes</h1>
+root@gold:~# pct console <span style="color:#bd93f9">105</span></code></pre></div>
+<h1 id="make-desired-changes">Make desired changes</h1>
+
 <p>You can do pretty much anything, but keep it simple:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># Install packages</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># yum -y update &amp;&amp; yum -y install openssh-server vim sudo</span>
-<span style="color:#6272a4"># Add user</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># adduser -G wheel nc</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># passwd nc</span>
-<span style="color:#6272a4"># Enable passwordless sudo (welcome to non-production)</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># visudo</span>
-<span style="color:#6272a4"># enable SSH</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># systemctl enable sshd          </span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># systemctl start sshd   # so I can verify it works</span>
-<span style="color:#6272a4"># clean cache and tmp</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># yum clean all</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># rm -rf /var/cache/yum</span>
-<span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># rm -rf /tmp/*</span>
-</code></pre></div><p>When you&rsquo;re done, power it down;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># poweroff</span>
-</code></pre></div><h1 id="roll-it-back-up">Roll it back up</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># Install packages
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># yum -y update &amp;&amp; yum -y install openssh-server vim sudo
+</span><span style="color:#6272a4"># Add user
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># adduser -G wheel nc
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># passwd nc
+</span><span style="color:#6272a4"># Enable passwordless sudo (welcome to non-production)
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># visudo
+</span><span style="color:#6272a4"># enable SSH
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># systemctl enable sshd          
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># systemctl start sshd   # so I can verify it works
+</span><span style="color:#6272a4"># clean cache and tmp
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># yum clean all
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span><span style="color:#6272a4"># rm -rf /var/cache/yum
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span># rm -rf /tmp/*</code></pre></div>
+<p>When you&rsquo;re done, power it down;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">[</span>root@CT105 ~<span style="color:#ff79c6">]</span># poweroff</code></pre></div>
+<h1 id="roll-it-back-up">Roll it back up</h1>
+
 <p>Powering off dumps you right back into the host cli, where you run:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@gold:~# vzdump <span style="color:#bd93f9">105</span> --compress gzip --dumpdir /root/
-root@gold:~# mv FILENAME.tar.gz /mnt/pve/gluster/template/cache/centos-7-ssh-20180908.tar.gz
-</code></pre></div><p>Now you can spin up instances with your new template.</p>
+root@gold:~# mv FILENAME.tar.gz /mnt/pve/gluster/template/cache/centos-7-ssh-20180908.tar.gz</code></pre></div>
+<p>Now you can spin up instances with your new template.</p>
 
 </div>
 
@@ -216,31 +216,21 @@ root@gold:~# mv FILENAME.tar.gz /mnt/pve/gluster/template/cache/centos-7-ssh-201
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/14-ansible-deployment-with-proxmox/'>
-        <span aria-hidden='true'><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="20" y1="12" x2="4" y2="12" />
-<polyline points="10 18 4 12 10 6" />
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
 </svg>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Deploying Infrastructure on Proxmox with Ansible</a>
     </div><div class='next-entry sep-before'>
       <a href='/blog/16-generating-bind-entries-from-ansible-hostvars/'>
-        <span class='screen-reader-text'>Next post: </span>Generating BIND Config From Ansible hostvars<span aria-hidden='true'>Next <svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><line x1="4" y1="12" x2="20" y2="12" />
-<polyline points="14 6 20 12 14 18" />
+        <span class='screen-reader-text'>Next post: </span>Generating BIND Config From Ansible hostvars<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
 </svg>
 </span>
       </a>
@@ -255,73 +245,53 @@ root@gold:~# mv FILENAME.tar.gz /mnt/pve/gluster/template/cache/centos-7-ssh-201
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Contact via Email</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-<polyline points="22,6 12,13 2,6" />
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+  
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
-  class="icon"
-  xmlns="http://www.w3.org/2000/svg"
-  viewbox="0 0 24 24"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  aria-hidden="true"
-><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-<rect x="2" y="9" width="4" height="12" />
-<circle cx="4" cy="4" r="2" />
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
 
 </body>
 

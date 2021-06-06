@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -9,12 +9,12 @@
   
   <url>
     <loc>https://www.nathancurry.com/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.nathancurry.com/blog/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -26,28 +26,58 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/bash/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <loc>https://www.nathancurry.com/blog/29-openstack-ansible-part4/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <loc>https://www.nathancurry.com/blog/28-openstack-ansible-part3/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/grep/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <loc>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/scripting/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <loc>https://www.nathancurry.com/blog/26-openstack-ansible-part1/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/sed/</loc>
-    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <loc>https://www.nathancurry.com/blog/25-setting-up-freeipa/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/24-organizing-ansible-project-into-roles/</loc>
+    <lastmod>2018-09-14T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/22-ansible-pxeboot-vms/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</loc>
+    <lastmod>2018-09-12T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</loc>
+    <lastmod>2018-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</loc>
+    <lastmod>2018-09-11T17:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -56,27 +86,7 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/ansible/</loc>
-    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</loc>
-    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/bind/</loc>
-    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/dhcpd/</loc>
-    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/virtualization/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -96,22 +106,7 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/iac/</loc>
-    <lastmod>2018-09-07T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/proxmox/</loc>
-    <lastmod>2018-09-07T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/blog/13-adding-third-proxmox-gluster-node/</loc>
-    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/glusterfs/</loc>
     <lastmod>2018-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -126,28 +121,8 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/freeipa/</loc>
-    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/homelab/</loc>
-    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/blog/07-kerberized-nfs-with-freeipa-on-centos-7/</loc>
     <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/nfs/</loc>
-    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/kvm/</loc>
-    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -156,18 +131,8 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/categories/certifications/</loc>
-    <lastmod>2018-08-29T16:08:45+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/cisco/</loc>
-    <lastmod>2018-08-29T16:08:45+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.nathancurry.com/blog/05-icnd1-recap/</loc>
-    <lastmod>2018-08-29T16:08:45+00:00</lastmod>
+    <lastmod>2018-08-29T16:08:45-06:00</lastmod>
   </url>
   
   <url>
@@ -182,12 +147,7 @@
   
   <url>
     <loc>https://www.nathancurry.com/blog/04-ex200-recap/</loc>
-    <lastmod>2018-08-20T12:02:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.nathancurry.com/categories/redhat/</loc>
-    <lastmod>2018-08-20T12:02:23+00:00</lastmod>
+    <lastmod>2018-08-20T12:02:23-06:00</lastmod>
   </url>
   
   <url>
@@ -196,8 +156,9 @@
   </url>
   
   <url>
-    <loc>https://www.nathancurry.com/page/</loc>
-    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
+    <loc>https://www.nathancurry.com/categories/ansible/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -205,7 +166,103 @@
   </url>
   
   <url>
+    <loc>https://www.nathancurry.com/categories/bash/</loc>
+    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/bind/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/certifications/</loc>
+    <lastmod>2018-08-29T16:08:45-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/chrony/</loc>
+    <lastmod>2018-09-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/cisco/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nathancurry.com/tags/config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/dhcpd/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/freeipa/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/glusterfs/</loc>
+    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/grep/</loc>
+    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/homelab/</loc>
+    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/iac/</loc>
+    <lastmod>2018-09-07T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/kickstart/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/kvm/</loc>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/networking/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/nfs/</loc>
+    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -213,11 +270,91 @@
   </url>
   
   <url>
+    <loc>https://www.nathancurry.com/categories/openstack/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/page/</loc>
+    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/proxmox/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/pxe/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/redhat/</loc>
+    <lastmod>2018-08-20T12:02:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/reposync/</loc>
+    <lastmod>2018-09-11T17:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/roles/</loc>
+    <lastmod>2018-09-14T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/scripting/</loc>
+    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/security/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/sed/</loc>
+    <lastmod>2018-09-11T10:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nathancurry.com/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/ssh/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.nathancurry.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/virtualization/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nathancurry.com/categories/vlan/</loc>
+    <lastmod>2018-09-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
