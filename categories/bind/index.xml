@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bind on Nathan Curry</title>
+    <title>bind on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/bind/</link>
-    <description>Recent content in Bind on Nathan Curry</description>
+    <description>Recent content in bind on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/bind/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/bind/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ansible: Deploy DNS/DHCP Failover Pair</title>
+      <title>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</title>
       <link>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       

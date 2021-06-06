@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='&#34;Hey man, I thought you were doing oVirt?&#34;'>
@@ -13,27 +11,23 @@
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-09-04T14:00:00Z'/><meta property='article:modified_time' content='2018-09-04T14:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.48" />
+<meta name="generator" content="Hugo 0.80.0" />
 
   <title>Proxmox VE 5.2-1 with a GlusterFS Store • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/11-proxmox-ve-with-glusterfs-store/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
-
-
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'>
-
-    <div id='sidebar' class='sidebar'>
+  <div class='site'><div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -46,10 +40,12 @@
     </div>
     
     <h2 class='title site-title '>
-    Nathan Curry
+      <a href='/'>
+      Nathan Curry
+      </a>
     </h2>
     <div class='desc'>
-    Sysadmin, RHCSA, CCENT
+    RHCA: Infrastructure Level III
     </div>
   </header>
 
@@ -57,29 +53,35 @@
 </div>
 
   <div class='sidebar-overlay'></div>
-</div>
-
-    <div class='main'>
-
-      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="3" y1="12" x2="21" y2="12" />
-  <line x1="3" y1="6" x2="21" y2="6" />
-  <line x1="3" y1="18" x2="21" y2="18" />
-  
+  <span class='open'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="3" y1="12" x2="21" y2="12" />
+<line x1="3" y1="6" x2="21" y2="6" />
+<line x1="3" y1="18" x2="21" y2="18" />
 </svg>
 </span>
-  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-  
+  <span class='close'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="18" y1="6" x2="6" y2="18" />
+<line x1="6" y1="6" x2="18" y2="18" />
 </svg>
 </span>
 </button>
@@ -93,11 +95,13 @@
         <a href=''></a>
       </li></ul>
   </div>
-</nav>
+</nav><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
           </div>
         </div>
       </header>
@@ -115,15 +119,19 @@
 
 
     </div>
-    
-<div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-  
+    <div class='entry-meta'>
+  <span class='posted-on'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+<line x1="16" y1="2" x2="16" y2="6" />
+<line x1="8" y1="2" x2="8" y2="6" />
+<line x1="3" y1="10" x2="21" y2="10" />
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-09-04T14:00:00Z'>04 Sep 2018</time>
@@ -131,11 +139,16 @@
 
   
   
-<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-  
+<span class='reading-time'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><circle cx="12" cy="12" r="10" />
+<polyline points="12 6 12 12 15 15" />
 </svg>
 3 mins read
 </span>
@@ -154,150 +167,132 @@
     <span>Table of Contents</span>
   </summary>
   <nav id="TableOfContents">
-<ul>
-<li><a href="#installation">Installation</a>
-<ul>
-<li><a href="#hard-drive-partitioning">Hard drive partitioning</a></li>
-<li><a href="#email-notification">Email notification</a></li>
-</ul></li>
-<li><a href="#first-boot">First boot</a></li>
-<li><a href="#add-storage">Add Storage:</a>
-<ul>
-<li><a href="#create-gluster">Create Gluster</a></li>
-<li><a href="#add-through-webui">Add through WebUI</a></li>
-</ul></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
+  <ul>
+    <li><a href="#hard-drive-partitioning">Hard drive partitioning</a></li>
+    <li><a href="#email-notification">Email notification</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#create-gluster">Create Gluster</a></li>
+    <li><a href="#add-through-webui">Add through WebUI</a></li>
+  </ul>
 </nav>
 </details>
 
 
   <div class='container entry-content'>
-  
-
-<p>I had initially planned on migrating from plain KVM to oVirt.  My reasoning was thus:</p>
-
+  <p>I had initially planned on migrating from plain KVM to oVirt.  My reasoning was thus:</p>
 <ol>
 <li>oVirt is the upstream of Red Hat Enterprise Virtualization, and I plan on pursuing higher Red Hat certifications</li>
 <li>It inegrates with OpenStack, another technology adopted by Red Hat</li>
 <li>It&rsquo;s robust and flexible</li>
 </ol>
-
-<p>However, upon installing
-* Documentation for RHEV is complete, but behind a version or two
-* Documentation for oVirt is poorly maintained, and some documents stop almost mid-sentence
-* Terraform plugins for oVirt are not ready for primetime
-* The network management is needlessly ornate</p>
-
+<p>However, upon installing</p>
+<ul>
+<li>Documentation for RHEV is complete, but behind a version or two</li>
+<li>Documentation for oVirt is poorly maintained, and some documents stop almost mid-sentence</li>
+<li>Terraform plugins for oVirt are not ready for primetime</li>
+<li>The network management is needlessly ornate</li>
+</ul>
 <p>I&rsquo;ve read emphatic praise for Proxmox, and so I figured I&rsquo;d give it a try despite them being Debian-based savages.</p>
-
 <h1 id="installation">Installation</h1>
-
 <p>Super easy.  Download, DD to one of those tiny free flash drives some guy with a lanyard standing in a field gave me, and click next a lot.</p>
-
 <p>One minor complaint: I couldn&rsquo;t tab through the fields on the EULA page, so I had to walk all the way to the other side of the room to get a mouse.</p>
-
 <h2 id="hard-drive-partitioning">Hard drive partitioning</h2>
-
 <p>There&rsquo;s no manual partitioning, but they give you the option to set max root size, minimum free space, etc.</p>
-
-<p>I set:
-* swap = 8GB
-* max root = 10GB
-* min free = 200GB</p>
-
+<p>I set:</p>
+<ul>
+<li>swap = 8GB</li>
+<li>max root = 10GB</li>
+<li>min free = 200GB</li>
+</ul>
 <p>This rendered the following:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@gold:/# fdisk -l /dev/sda
 Device        Start       End   Sectors   Size Type
 /dev/sda1      <span style="color:#bd93f9">2048</span>      <span style="color:#bd93f9">4095</span>      <span style="color:#bd93f9">2048</span>     1M BIOS boot
 /dev/sda2      <span style="color:#bd93f9">4096</span>    <span style="color:#bd93f9">528383</span>    <span style="color:#bd93f9">524288</span>   256M EFI System
-/dev/sda3  <span style="color:#bd93f9">528384</span> <span style="color:#bd93f9">488397134</span> <span style="color:#bd93f9">487868751</span> <span style="color:#bd93f9">232</span>.6G Linux LVM
+/dev/sda3  <span style="color:#bd93f9">528384</span> <span style="color:#bd93f9">488397134</span> <span style="color:#bd93f9">487868751</span> 232.6G Linux LVM
 ld
-<span style="color:#6272a4"># Abbreviated LVM setup:
-</span><span style="color:#6272a4"></span>root@gold:/# lvdisplay
+<span style="color:#6272a4"># Abbreviated LVM setup:</span>
+root@gold:/# lvdisplay
   --- Logical volume ---
   LV Path                /dev/pve/swap
   LV Name                swap
   VG Name                pve
-  LV Size                <span style="color:#bd93f9">8</span>.00 GiB
+  LV Size                8.00 GiB
   --- Logical volume ---
   LV Path                /dev/pve/root
   LV Name                root
   VG Name                pve
-  LV Size                <span style="color:#bd93f9">10</span>.00 GiB
+  LV Size                10.00 GiB
   --- Logical volume ---
   LV Name                data
   VG Name                pve
   LV Pool metadata       data_tmeta
   LV Pool data           data_tdata
-  LV Size                <span style="color:#bd93f9">12</span>.63 GiB</code></pre></div>
-<p>The thin pool is for provisioning containers.  It&rsquo;s a little light, but my containers will be doing next to nothing.</p>
-
+  LV Size                12.63 GiB
+</code></pre></div><p>The thin pool is for provisioning containers.  It&rsquo;s a little light, but my containers will be doing next to nothing.</p>
 <h2 id="email-notification">Email notification</h2>
-
 <p>I set up email notification to <code>fullname+proxmox@gmail.com</code> to make use of the autofilters feature in gmail</p>
-
 <h1 id="first-boot">First boot</h1>
-
 <p>It takes a minute for everything to come online, but you navigate to <code>https://hostname:8006</code> and get rolling</p>
-
 <p>I also copied my public key to the server:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~ $ ssh-copy-id -i ~/.ssh/id_ed25519.pub root@gold</code></pre></div>
-<p>The web interface is fantastic. Not very modern looking, but fast and full-featured.  Creating a cluster is very easy, and it even automatically shares authorized keys to all nodes.  I&rsquo;m literally crying right now.  What lovely savages.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc@tiny: ~ $ ssh-copy-id -i ~/.ssh/id_ed25519.pub root@gold
+</code></pre></div><p>The web interface is fantastic. Not very modern looking, but fast and full-featured.  Creating a cluster is very easy, and it even automatically shares authorized keys to all nodes.  I&rsquo;m literally crying right now.  What lovely savages.</p>
 <h1 id="add-storage">Add Storage:</h1>
-
 <h2 id="create-gluster">Create Gluster</h2>
-
 <p>This is basically a repeat of the previous article on Gluster, but to summarize:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4">#On both hosts
-</span><span style="color:#6272a4"></span>root@gold:~# apt-get update
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4">#On both hosts</span>
+root@gold:~# apt-get update
 root@gold:~# apt-get install glusterfs-server glusterfs-client
 root@gold:~# systemctl start glusterfs-server
 root@gold:~# systemctl <span style="color:#8be9fd;font-style:italic">enable</span> glusterfs-server
-<span style="color:#6272a4">#Get free extents
-</span><span style="color:#6272a4"></span>root@gold:~# vgdisplay
+<span style="color:#6272a4">#Get free extents</span>
+root@gold:~# vgdisplay
   --- Volume group ---
   VG Name               pve
-  Free  PE / Size       <span style="color:#bd93f9">51200</span> / <span style="color:#bd93f9">200</span>.00 GiB
-<span style="color:#6272a4">#Create volume
-</span><span style="color:#6272a4"></span>root@gold:~# lvcreate pve /dev/sda3 -l <span style="color:#bd93f9">51200</span> -n gluster
-<span style="color:#6272a4">#Format with inode size=512 for glusterfs performance
-</span><span style="color:#6272a4"></span>root@gold:~# mkfs.xfs -i <span style="color:#8be9fd;font-style:italic">size</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">512</span> /dev/pve/gluster
+  Free  PE / Size       <span style="color:#bd93f9">51200</span> / 200.00 GiB
+<span style="color:#6272a4">#Create volume</span>
+root@gold:~# lvcreate pve /dev/sda3 -l <span style="color:#bd93f9">51200</span> -n gluster
+<span style="color:#6272a4">#Format with inode size=512 for glusterfs performance</span>
+root@gold:~# mkfs.xfs -i <span style="color:#8be9fd;font-style:italic">size</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">512</span> /dev/pve/gluster
 root@gold:~# <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;/dev/pve/gluster /glusterfs xfs defaults 0 0&#34;</span> &gt;&gt; /etc/fstab
 root@gold:~# mkdir /glusterfs
 root@gold:~# mount -a
 root@gold:~# mkdir /glusterfs/brick
 
-<span style="color:#6272a4">#On one host
-</span><span style="color:#6272a4"></span>root@gold:~# gluster peer probe silver
+<span style="color:#6272a4">#On one host</span>
+root@gold:~# gluster peer probe silver
 peer probe: success.
 root@gold:~# gluster volume create gluster replica <span style="color:#bd93f9">2</span> gold.lan.nathancurry.com:/glusterfs/brick silver.lan.nathancurry.com:/glusterfs/brick
 volume create: gluster: success: please start the volume to access data
 root@gold:~# gluster volume start gluster
-volume start: gluster: success</code></pre></div>
-<h2 id="add-through-webui">Add through WebUI</h2>
-
+volume start: gluster: success
+</code></pre></div><h2 id="add-through-webui">Add through WebUI</h2>
 <p>Navigate to Datacenter &gt; Storage, click Add, and follow the instructions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ID: gluster <span style="color:#6272a4">#Proxmox label
-</span><span style="color:#6272a4"></span>server: gold.lan.nathancurry.com
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ID: gluster <span style="color:#6272a4">#Proxmox label</span>
+server: gold.lan.nathancurry.com
 second server: silver.lan.nathancurry.com
-Volume name: gluster <span style="color:#6272a4">#Gluster volume name
-</span><span style="color:#6272a4"></span>Content: everything</code></pre></div>
-<h1 id="conclusion">Conclusion</h1>
-
+Volume name: gluster <span style="color:#6272a4">#Gluster volume name</span>
+Content: everything
+</code></pre></div><h1 id="conclusion">Conclusion</h1>
 <p>So far I love Proxmox.  I&rsquo;m going to cover setting up a VM and a container in the next post.</p>
 
 </div>
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-  
+  <div class='container sep-before'><div class='categories'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/proxmox/'>Proxmox</a>, <a class='category' href='/categories/glusterfs/'>Glusterfs</a>, <a class='category' href='/categories/virtualization/'>Virtualization</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/proxmox/'>proxmox</a>, <a class='category' href='/categories/glusterfs/'>glusterfs</a>, <a class='category' href='/categories/virtualization/'>virtualization</a></div>
 
   </div>
 </footer>
@@ -308,21 +303,31 @@ Volume name: gluster <span style="color:#6272a4">#Gluster volume name
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/09-two-node-glusterfs-on-ovirt/'>
-        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="20" y1="12" x2="4" y2="12"/>
-  <polyline points="10 18 4 12 10 6"/>
-  
+        <span aria-hidden='true'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="20" y1="12" x2="4" y2="12" />
+<polyline points="10 18 4 12 10 6" />
 </svg>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Two-Node GlusterFS on oVirt Node 4.2.5.1</a>
     </div><div class='next-entry sep-before'>
       <a href='/blog/13-adding-third-proxmox-gluster-node/'>
-        <span class='screen-reader-text'>Next post: </span>Adding a Third Proxmox&#43;Gluster Node<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-  
+        <span class='screen-reader-text'>Next post: </span>Adding a Third Proxmox&#43;Gluster Node<span aria-hidden='true'>Next <svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="4" y1="12" x2="20" y2="12" />
+<polyline points="14 6 20 12 14 18" />
 </svg>
 </span>
       </a>
@@ -337,53 +342,73 @@ Volume name: gluster <span style="color:#6272a4">#Gluster volume name
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-  
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-  <polyline points="22,6 12,13 2,6"/>
-  
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Contact via Email</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+<polyline points="22,6 12,13 2,6" />
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
-  
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-  <rect x="2" y="9" width="4" height="12"/>
-  <circle cx="4" cy="4" r="2"/>
-  
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+<rect x="2" y="9" width="4" height="12" />
+<circle cx="4" cy="4" r="2" />
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
 
 </body>
 

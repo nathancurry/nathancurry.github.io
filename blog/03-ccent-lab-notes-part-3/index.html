@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='This is a continuation of my previous notes on CCENT labs. These Ranet labs are significantly better-designed than the previous set of labs, though the evaluation at the end of the exam doesn&rsquo;t always work.
@@ -17,27 +15,23 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
 <meta property='og:site_name' content='Nathan Curry'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.nathancurry.com/i/labs/ranet-lab2.2.png'><meta property='article:section' content='blog'><meta property='article:published_time' content='2018-08-27T00:00:00Z'/><meta property='article:modified_time' content='2018-08-27T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.48" />
+<meta name="generator" content="Hugo 0.80.0" />
 
   <title>CCENT Lab Notes, Part 3 • Nathan Curry</title>
   <link rel='canonical' href='https://www.nathancurry.com/blog/03-ccent-lab-notes-part-3/'>
   
   
   <link rel='icon' href='/favicon/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#de7040;}
 </style>
 
   
 
 </head>
-
-
 <body class='page type-blog has-sidebar'>
 
-  <div class='site'>
-
-    <div id='sidebar' class='sidebar'>
+  <div class='site'><div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -50,10 +44,12 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
     </div>
     
     <h2 class='title site-title '>
-    Nathan Curry
+      <a href='/'>
+      Nathan Curry
+      </a>
     </h2>
     <div class='desc'>
-    Sysadmin, RHCSA, CCENT
+    RHCA: Infrastructure Level III
     </div>
   </header>
 
@@ -61,29 +57,35 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
 </div>
 
   <div class='sidebar-overlay'></div>
-</div>
-
-    <div class='main'>
-
-      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
 <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="3" y1="12" x2="21" y2="12" />
-  <line x1="3" y1="6" x2="21" y2="6" />
-  <line x1="3" y1="18" x2="21" y2="18" />
-  
+  <span class='open'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="3" y1="12" x2="21" y2="12" />
+<line x1="3" y1="6" x2="21" y2="6" />
+<line x1="3" y1="18" x2="21" y2="18" />
 </svg>
 </span>
-  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-  
+  <span class='close'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="18" y1="6" x2="6" y2="18" />
+<line x1="6" y1="6" x2="18" y2="18" />
 </svg>
 </span>
 </button>
@@ -97,11 +99,13 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
         <a href=''></a>
       </li></ul>
   </div>
-</nav>
+</nav><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>Sysadmin, RHCSA, CCENT</p>
+          <div class='header-info'><p class='site-title title'>Nathan Curry</p><p class='desc site-desc'>RHCA: Infrastructure Level III</p>
           </div>
         </div>
       </header>
@@ -117,15 +121,19 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
       
 
     </div>
-    
-<div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-  
+    <div class='entry-meta'>
+  <span class='posted-on'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+<line x1="16" y1="2" x2="16" y2="6" />
+<line x1="8" y1="2" x2="8" y2="6" />
+<line x1="3" y1="10" x2="21" y2="10" />
 </svg>
 <span class='screen-reader-text'>Posted on </span>
   <time class='entry-date' datetime='2018-08-27T00:00:00Z'>27 Aug 2018</time>
@@ -133,11 +141,16 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
 
   
   
-<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-  
+<span class='reading-time'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><circle cx="12" cy="12" r="10" />
+<polyline points="12 6 12 12 15 15" />
 </svg>
 4 mins read
 </span>
@@ -153,18 +166,12 @@ SPOILERS: DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS'>
   
 
   <div class='container entry-content'>
-  
-
-<p>This is a continuation of my previous notes on CCENT labs.  <a href="https://learningnetwork.cisco.com/message/63491#63491">These Ranet labs</a> are significantly better-designed than the previous set of labs, though the evaluation at the end of the exam doesn&rsquo;t always work.</p>
-
+  <p>This is a continuation of my previous notes on CCENT labs.  <a href="https://learningnetwork.cisco.com/message/63491#63491">These Ranet labs</a> are significantly better-designed than the previous set of labs, though the evaluation at the end of the exam doesn&rsquo;t always work.</p>
 <p>These are my notes for all the labs that deal with ICND1 objectives, and I will save the ICND2 objectives for later when I review.</p>
-
 <p><strong>SPOILERS:</strong>  DO NOT CONTINUE READING IF YOU PLAN ON DOING THE LABS</p>
-
-<h1 id="1-1-through-1-3-basic-config">1.1 through 1.3 Basic Config</h1>
-
+<h1 id="11-through-13-basic-config">1.1 through 1.3 Basic Config</h1>
 <p>These were simple introductory labs.  Set IPs, issue <code>no shut</code> on interfaces, and set passwords in global and line mode.  As an example, 1.3 was IPv6 addressing, and was as simple as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-HQ(config)#int s0/0/0
+<pre><code class="language-cisco" data-lang="cisco">Ranet-HQ(config)#int s0/0/0
 Ranet-HQ(config-if)#ipv6 address fec0:78:0:1::2/64
 Ranet-HQ(config-if)#no shut
 Ranet-HQ(config-if)#int s0/1/0
@@ -175,83 +182,67 @@ Ranet-HQ(config-if)#ipv6 address fec0:78:0:2::/64 eui-64
 Ranet-HQ(config-if)#ipv6 address 2001:22::/48 eui-64
 Ranet-HQ(config-if)#no shut
 Ranet-HQ(config-if)#exit
-Ranet-HQ(config)#ipv6 unicast-routing</code></pre></div>
-<h1 id="2-1-intervlan-routing">2.1, InterVLAN Routing</h1>
-
+Ranet-HQ(config)#ipv6 unicast-routing
+</code></pre><h1 id="21-intervlan-routing">2.1, InterVLAN Routing</h1>
 <p>This was actually the first one I did, and I didn&rsquo;t take notes.  Basic trunking to a ROAS with tagging enabled, and access ports for the VLAN hosts.</p>
-
-<h1 id="2-2-vlan-trunk-protocol">2.2 VLAN Trunk Protocol</h1>
-
+<h1 id="22-vlan-trunk-protocol">2.2 VLAN Trunk Protocol</h1>
 <p>This is a great lab.</p>
-
-<p><img src="/i/labs/ranet-lab2.2.png" alt="lab2.2" /></p>
-
+<p><img src="/i/labs/ranet-lab2.2.png" alt="lab2.2"></p>
 <p>There&rsquo;s limited privileges on Switch1, so you have to run informational commands from user mode:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-SW1&gt;show vlan
+<pre><code class="language-cisco" data-lang="cisco">Ranet-SW1&gt;show vlan
 Ranet-SW1&gt;sh interfaces g0/1 switchPort
-Ranet-SW1&gt;sh vtp status</code></pre></div>
-<p>No changes are to be made to Switch2, except to configure trunks:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-SW2(config)#vtp mode transparent
+Ranet-SW1&gt;sh vtp status
+</code></pre><p>No changes are to be made to Switch2, except to configure trunks:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-SW2(config)#vtp mode transparent
 Ranet-SW2(config)#int range g0/1-2
 Ranet-SW2(config-if-range)#switchport mode trunk
 Ranet-SW2(config-if-range)#switchport trunk native vlan 1
-Ranet-SW2(config-if-range)#switchport trunk allowed vlan all</code></pre></div>
-<p>Switch3 needs to be configured for trunking and access:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-SW3(config)#vtp mode client
+Ranet-SW2(config-if-range)#switchport trunk allowed vlan all
+</code></pre><p>Switch3 needs to be configured for trunking and access:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-SW3(config)#vtp mode client
 Ranet-SW3(config)#int f0/1
 Ranet-SW3(config-if)#switchport mode access
 Ranet-SW3(config-if)#switchport access vlan 10
 Ranet-SW3(config-if)#int f0/2
 Ranet-SW3(config-if)#switchport mode access
-Ranet-SW3(config-if)#switchport access vlan 20</code></pre></div>
-<p>Trunking enabled itself on Switch3, and we&rsquo;re all a happy family.</p>
-
-<h1 id="4-1-static-routes">4.1 Static routes</h1>
-
+Ranet-SW3(config-if)#switchport access vlan 20
+</code></pre><p>Trunking enabled itself on Switch3, and we&rsquo;re all a happy family.</p>
+<h1 id="41-static-routes">4.1 Static routes</h1>
 <p>This was simple, dealing with static routes.</p>
-
-<p><img src="/i/labs/ranet-lab4.1.png" alt="lab4.1" /></p>
-
+<p><img src="/i/labs/ranet-lab4.1.png" alt="lab4.1"></p>
 <p>I simply applied IPs as specified, and set the router of last resort to the next hop to the Internet.  And then hit each router with a <code>ip routing</code> for good measure.</p>
-
-<h1 id="4-2-rip">4.2 RIP</h1>
-
+<h1 id="42-rip">4.2 RIP</h1>
 <p>This is similar to the last lab, but with RIP instead of static routes.</p>
-
-<p><img src="/i/labs/ranet-lab4.2.png" alt="lab4.2" /></p>
-
+<p><img src="/i/labs/ranet-lab4.2.png" alt="lab4.2"></p>
 <p>Again, I set the interfaces per spec, ex:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-BR(config)#int s0/0/0
+<pre><code class="language-cisco" data-lang="cisco">Ranet-BR(config)#int s0/0/0
 Ranet-BR(config-if)#ip address 98.93.165.73 255.255.255.252
 Ranet-BR(config-if)#encapsulation hdlc
 Ranet-BR(config-if)#clock rate 64000
 Ranet-BR(config-if)#no shut
 Ranet-BR(config-if)#int f0/0
 Ranet-BR(config-if)#ip address 98.83.165.81 255.255.255.240
-Ranet-BR(config-if)#no shut</code></pre></div>
-<p>And routing with RIP:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-BR(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
+Ranet-BR(config-if)#no shut
+</code></pre><p>And routing with RIP:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-BR(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
 Ranet-BR(config)#router rip
 Ranet-BR(config-router)#version 2
 Ranet-BR(config-router)#passive-interface f0/0
 Ranet-BR(config-router)#network 98.0.0.0
-Ranet-BR(config-router)#no auto-summary</code></pre></div>
-<h1 id="4-5-port-security">4.5 Port Security</h1>
-
+Ranet-BR(config-router)#no auto-summary
+</code></pre><h1 id="45-port-security">4.5 Port Security</h1>
 <p>This lab is pretty straightforward.</p>
-
-<p><img src="/i/labs/ranet-lab4.5.png" alt="lab4.5" /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-SW(config)#int range f0/1-24
+<p><img src="/i/labs/ranet-lab4.5.png" alt="lab4.5"></p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-SW(config)#int range f0/1-24
 Ranet-SW(config-if-range)#switchport mode access
 Ranet-SW(config-if-range)#switchport port-security
 Ranet-SW(config-if-range)#int f0/1
 Ranet-SW(config-if)#switchport port-security mac-address sticky
 Ranet-SW(config-if)#int f0/3
-Ranet-SW(config-if)#switchport port-security mac-address 0030.f295.15c6</code></pre></div>
-<h1 id="4-6-access-control-lists">4.6 Access Control Lists</h1>
-
+Ranet-SW(config-if)#switchport port-security mac-address 0030.f295.15c6
+</code></pre><h1 id="46-access-control-lists">4.6 Access Control Lists</h1>
 <p>I think this was maybe the worst lab of the bunch.  Not a really good demonstration of ACLs.  First, there was a lot of preliminary setup:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-HQ(config)#int f0/0
+<pre><code class="language-cisco" data-lang="cisco">Ranet-HQ(config)#int f0/0
 Ranet-HQ(config-if)#no shut
 Ranet-HQ(config-if)#ip address 172.22.3.33 255.255.255.224
 Ranet-HQ(config-if)#int s0/1/0
@@ -264,81 +255,78 @@ Ranet-HQ(config-router)#version 2
 Ranet-HQ(config-router)#no auto-summary
 Ranet-HQ(config-router)#network 172.22.0.0
 Ranet-HQ(config-router)#network 203.144.7.252
-Ranet-HQ(config-router)#end</code></pre></div>
-<p>I verified that RIP routes were propagating, and then continued with the ACL.  I would have made a separate access-group for the vty, but the lab said it should be a single ACL:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-HQ(config-ext-nacl)#permit tcp host 172.22.3.50 host 172.22.3.33 eq telnet
+Ranet-HQ(config-router)#end
+</code></pre><p>I verified that RIP routes were propagating, and then continued with the ACL.  I would have made a separate access-group for the vty, but the lab said it should be a single ACL:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-HQ(config-ext-nacl)#permit tcp host 172.22.3.50 host 172.22.3.33 eq telnet
 Ranet-HQ(config-ext-nacl)#deny tcp host 172.22.3.53 any eq www
 Ranet-HQ(config-ext-nacl)#deny tcp any host 172.22.3.33 eq telnet
 Ranet-HQ(config-ext-nacl)#permit ip any any
 Ranet-HQ(config-ext-nacl)#exit
 Ranet-HQ(config)#interface f0/0
-Ranet-HQ(config-if)#ip access-group 100 in</code></pre></div>
-<p>And we&rsquo;re good to go!</p>
-
-<h1 id="4-7-nat">4.7 NAT</h1>
-
+Ranet-HQ(config-if)#ip access-group 100 in
+</code></pre><p>And we&rsquo;re good to go!</p>
+<h1 id="47-nat">4.7 NAT</h1>
 <p>While I&rsquo;m complaining, there&rsquo;s no NAT overload here.</p>
-
-<p><img src="/i/labs/ranet-lab4.7.png" alt="lab4.7" /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#ip nat pool Ranet 25.5.5.65 25.5.5.70 netmask 255.255.255.248
+<p><img src="/i/labs/ranet-lab4.7.png" alt="lab4.7"></p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#ip nat pool Ranet 25.5.5.65 25.5.5.70 netmask 255.255.255.248
 Ranet-GW(config)#access-list 1 permit 192.168.0.193 0.0.0.15
 Ranet-GW(config)#int fastEthernet 0/0
 Ranet-GW(config-if)#ip nat inside
 Ranet-GW(config-if)#int s0/0/0
 Ranet-GW(config-if)#ip nat outside
 Ranet-GW(config-if)#exit
-Ranet-GW(config)#ip nat inside source list 1 pool Ranet</code></pre></div>
-<p>And after pinging the ISP&rsquo;s router from a network host, I get:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-GW#show ip nat translations
+Ranet-GW(config)#ip nat inside source list 1 pool Ranet
+</code></pre><p>And after pinging the ISP&rsquo;s router from a network host, I get:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-GW#show ip nat translations
 Pro  Inside global     Inside local       Outside local      Outside global
 icmp 25.5.5.65:1       192.168.0.200:1    22.5.6.2:1         22.5.6.2:1
 icmp 25.5.5.65:2       192.168.0.200:2    22.5.6.2:2         22.5.6.2:2
 icmp 25.5.5.65:3       192.168.0.200:3    22.5.6.2:3         22.5.6.2:3
-icmp 25.5.5.65:4       192.168.0.200:4    22.5.6.2:4         22.5.6.2:4</code></pre></div>
-<h1 id="4-9-dhcp">4.9 DHCP</h1>
-
+icmp 25.5.5.65:4       192.168.0.200:4    22.5.6.2:4         22.5.6.2:4
+</code></pre><h1 id="49-dhcp">4.9 DHCP</h1>
 <p>It&rsquo;s a little odd that DHCP is all the way at the end, but at least they put in another opportunity to get NAT working.</p>
-
-<p><img src="/i/labs/ranet-lab4.9.png" alt="lab4.9" /></p>
-
+<p><img src="/i/labs/ranet-lab4.9.png" alt="lab4.9"></p>
 <p>First, I bring up the interfaces:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#int f0/0
+<pre><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#int f0/0
 Ranet-GW(config-if)#no shut
 Ranet-GW(config-if)#ip address 10.0.0.129 255.255.255.240
 Ranet-GW(config-if)#int s0/0/0
 Ranet-GW(config-if)#ip address 77.8.210.1 255.255.255.252
 Ranet-GW(config-if)#no shut
-Ranet-GW(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0</code></pre></div>
-<p>Then set up NAT:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#access-list 1 permit 10.0.0.128 0.0.0.15
+Ranet-GW(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
+</code></pre><p>Then set up NAT:</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#access-list 1 permit 10.0.0.128 0.0.0.15
 Ranet-GW(config)#ip nat pool Ranet 19.5.39.129 19.5.39.130 netmask 255.255.255.252
 Ranet-GW(config)#ip nat inside source list 1 pool Ranet
 Ranet-GW(config)#int f0/0
 Ranet-GW(config-if)#ip nat inside
 Ranet-GW(config-if)#int s0/0/0
-Ranet-GW(config-if)#ip nat outside</code></pre></div>
-<p>And finally, bang out DHCP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#ip dhcp excluded-address 10.0.0.129 10.0.0.130
+Ranet-GW(config-if)#ip nat outside
+</code></pre><p>And finally, bang out DHCP.</p>
+<pre><code class="language-cisco" data-lang="cisco">Ranet-GW(config)#ip dhcp excluded-address 10.0.0.129 10.0.0.130
 Ranet-GW(config)#ip dhcp pool Ranet
 Ranet-GW(dhcp-config)#default-router 10.0.0.129
 Ranet-GW(dhcp-config)#dns-server 77.8.209.5
-Ranet-GW(dhcp-config)#network 10.0.0.128 255.255.255.240</code></pre></div>
-<h1 id="conclusion">Conclusion</h1>
-
+Ranet-GW(dhcp-config)#network 10.0.0.128 255.255.255.240
+</code></pre><h1 id="conclusion">Conclusion</h1>
 <p>Well, these labs were much better than the previous ones, and I&rsquo;ve got my exam scheduled in under 48 hours, so it was worth the effort. I&rsquo;m looking forward to moving on to the RHCE and ICND2 objectives though.</p>
-
 <p>Stay tuned.</p>
 
 </div>
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-  
+  <div class='container sep-before'><div class='categories'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/certifications/'>Certifications</a>, <a class='category' href='/categories/cisco/'>Cisco</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/certifications/'>certifications</a>, <a class='category' href='/categories/cisco/'>cisco</a></div>
 
   </div>
 </footer>
@@ -349,21 +337,31 @@ Ranet-GW(dhcp-config)#network 10.0.0.128 255.255.255.240</code></pre></div>
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/02-ccent-lab-notes-part-2/'>
-        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="20" y1="12" x2="4" y2="12"/>
-  <polyline points="10 18 4 12 10 6"/>
-  
+        <span aria-hidden='true'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="20" y1="12" x2="4" y2="12" />
+<polyline points="10 18 4 12 10 6" />
 </svg>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>CCENT Lab Notes, Part 2</a>
     </div><div class='next-entry sep-before'>
       <a href='/blog/05-icnd1-recap/'>
-        <span class='screen-reader-text'>Next post: </span>Cisco ICND1 Recap<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-  
+        <span class='screen-reader-text'>Next post: </span>Cisco ICND1 Recap<span aria-hidden='true'>Next <svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="4" y1="12" x2="20" y2="12" />
+<polyline points="14 6 20 12 14 18" />
 </svg>
 </span>
       </a>
@@ -378,53 +376,73 @@ Ranet-GW(dhcp-config)#network 10.0.0.128 255.255.255.240</code></pre></div>
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
-        <a href='https://github.com/nathancurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-  
+        <a href='https://github.com/nathancurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
 </svg>
 </a>
       </li><li>
-        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-  <polyline points="22,6 12,13 2,6"/>
-  
+        <a href='mailto:nathancurry@gmail.com' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Contact via Email</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+<polyline points="22,6 12,13 2,6" />
 </svg>
 </a>
       </li><li>
-        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
-  
+        <a href='https://gitlab.com/nathancurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Gitlab account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
 </svg>
 </a>
       </li><li>
-        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-  <rect x="2" y="9" width="4" height="12"/>
-  <circle cx="4" cy="4" r="2"/>
-  
+        <a href='https://linkedin.com/in/nathandcurry' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+<rect x="2" y="9" width="4" height="12" />
+<circle cx="4" cy="4" r="2" />
 </svg>
 </a>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p>Accidentally all the rights. &copy; 2018 Nathan Curry </p>
+  <p>Accidentally all the rights. &copy; 2018-2021 Nathan Curry </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
 
 </body>
 
