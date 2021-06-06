@@ -1,27 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Redhat on Nathan Curry</title>
+    <title>redhat on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/redhat/</link>
-    <description>Recent content in Redhat on Nathan Curry</description>
+    <description>Recent content in redhat on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 12:02:23 -0600</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/redhat/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 20 Aug 2018 12:02:23 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/redhat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Red Hat EX200 Recap</title>
       <link>https://www.nathancurry.com/blog/04-ex200-recap/</link>
-      <pubDate>Mon, 20 Aug 2018 12:02:23 -0600</pubDate>
+      <pubDate>Mon, 20 Aug 2018 12:02:23 +0000</pubDate>
       
       <guid>https://www.nathancurry.com/blog/04-ex200-recap/</guid>
       <description>I&amp;rsquo;m an RHCSA as of August 17th, and I figured I&amp;rsquo;d jot down a few notes about my preparation, successes, and failures.
 Preparation My materials to prepare for this exam:
- CBT Nuggets System Administrator Prep videos
- Michael Jang&amp;rsquo;s RCHSA/RHCE 7 book
- Some free online practice exams
- 3x micro PCs for hypervisors
+  CBT Nuggets System Administrator Prep videos
+  Michael Jang&amp;rsquo;s RCHSA/RHCE 7 book
+  Some free online practice exams
+  3x micro PCs for hypervisors
   The CBT Nuggets video series was rudimentary, but it has one of the better intros into SELinux that I&amp;rsquo;ve seen.</description>
     </item>
     

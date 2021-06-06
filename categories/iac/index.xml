@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iac on Nathan Curry</title>
+    <title>iac on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/iac/</link>
-    <description>Recent content in Iac on Nathan Curry</description>
+    <description>Recent content in iac on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Sep 2018 18:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/iac/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 07 Sep 2018 18:00:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/iac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploying Infrastructure on Proxmox with Ansible</title>
       <link>https://www.nathancurry.com/blog/14-ansible-deployment-with-proxmox/</link>
@@ -20,7 +16,7 @@
 Configure Proxmox for ansible I&amp;rsquo;ve been working off morph027&amp;rsquo;s workflow for a first successful run. He uses the ansible plugin proxmox_kvm, and I&amp;rsquo;m using proxmox (for containers).
 Infrastructure Short and sweet:
 [proxmox] gold silver bronze Setup script To get my blood pumping, I wrote a playbook to configure the three nodes:
-# install_pip.</description>
+# install_pip.yml --- - name: &amp;#39;prep proxmox hosts for automation&amp;#39; hosts: &amp;#39;proxmox&amp;#39; gather_facts: false vars: packages: - &amp;#39;python-pip&amp;#39; - &amp;#39;python-dev&amp;#39; - &amp;#39;build-essential&amp;#39; tasks: - name: &amp;#39;install python-apt so native apt plugins work&amp;#39; package: name: &amp;#39;python-apt&amp;#39; state: &amp;#39;present&amp;#39; - name: &amp;#39;switch to community repos&amp;#39; apt_repository: repo: &amp;#39;deb https://enterprise.</description>
     </item>
     
   </channel>
