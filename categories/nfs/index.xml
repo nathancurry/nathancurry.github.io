@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nfs on Nathan Curry</title>
+    <title>nfs on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/nfs/</link>
-    <description>Recent content in Nfs on Nathan Curry</description>
+    <description>Recent content in nfs on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/nfs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/nfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerberized NFS with FreeIPA on CentOS 7 and Fedora 28</title>
       <link>https://www.nathancurry.com/blog/07-kerberized-nfs-with-freeipa-on-centos-7/</link>

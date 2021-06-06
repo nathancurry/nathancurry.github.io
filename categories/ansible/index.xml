@@ -1,121 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ansible on Nathan Curry</title>
+    <title>ansible on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/ansible/</link>
-    <description>Recent content in Ansible on Nathan Curry</description>
+    <description>Recent content in ansible on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OpenStack Ansible Installation, Part 2</title>
-      <link>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/27-openstack-ansible-part2/</guid>
-      <description>The OpenStack Ansible project includes examples for network configurations on Ubuntu, but not on CentOS. This is that journey.
-Click here for this post&amp;rsquo;s git commit.
-Preamble I took the &amp;ldquo;Test&amp;rdquo; configuration examples, which use 3 nodes, and decided to build around that.
-My first failed attempt was to use the nmcli Ansible module. At the time of writing, I encountered a number of issues with this module on CentOS 7 with kernel-3.</description>
-    </item>
-    
-    <item>
-      <title>OpenStack Ansible Installation, Part 1</title>
-      <link>https://www.nathancurry.com/blog/26-openstack-ansible-part1/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/26-openstack-ansible-part1/</guid>
-      <description>As I&amp;rsquo;ve been doing this other work, I&amp;rsquo;ve been reading about OpenStack and watching video presentations, and I deployed an AiO OpenStack VM with RDO. As things have progressed, I&amp;rsquo;ve encountered more and more ways in which Proxmox is deficient as a platform for automation.
-I decided that if I&amp;rsquo;m going to suffer endlessly at getting something to work, it should be something worthwhile like OpenStack. So here we are.</description>
-    </item>
-    
-    <item>
-      <title>Setting Up FreeIPA With Ansible</title>
-      <link>https://www.nathancurry.com/blog/25-setting-up-freeipa/</link>
-      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/25-setting-up-freeipa/</guid>
-      <description>I set up IdM to manage credentials. It&amp;rsquo;s currently a barebones system, but I&amp;rsquo;ll flesh it out as time goes on.
-Install FreeIPA The FreeIPA project makes this incredibly easy as a matter of fact, by providing the ansible-freeipa project. One caveat is that despite saying they support CentOS 7.4+, the replica script requires FreeIPA 4.6, which is not officially available.
-I looked into the possibility of using a Fedora, but after considering pros and cons, I decided to stick with CentOS, and work around this limitation.</description>
-    </item>
-    
-    <item>
-      <title>Organizing My Ansible Project Into Roles</title>
-      <link>https://www.nathancurry.com/blog/24-organizing-ansible-project-into-roles/</link>
-      <pubDate>Fri, 14 Sep 2018 18:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/24-organizing-ansible-project-into-roles/</guid>
-      <description>Thus far, I&amp;rsquo;ve been writing ad hoc playbooks and learning how all the pieces go together. It&amp;rsquo;s been largely disorganized, and I&amp;rsquo;ve made some structural mistakes in the process.
-I wanted to take a moment to correct these mistakes, in the hopes of making further progress more efficient.
-Take a look at the relevant git commit here
-Overview I&amp;rsquo;m not going to go into every role in depth, but will pick one or two items I restructured.</description>
-    </item>
-    
-    <item>
-      <title>Hardening SSH With Ansible</title>
-      <link>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</link>
-      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/23-hardening-ssh-with-ansible/</guid>
-      <description>I&amp;rsquo;ve been using root login for Ansible for the first part of this project, in part because this is not a production environment, and in part to avoid too many confounding factors while learning Ansible.
-But it started to bug me. Check the relevant git commit here
-Overview This is a straightfoward task, but I broke it down into steps:
- Add user/key, enable sudo on CentOS machines Add user/key, enable sudo on Debian machines Log in as user, remove root and password login  CentOS Here is the first play.</description>
-    </item>
-    
-    <item>
-      <title>Ansible: Deploy VMs With PXE and Kickstart</title>
-      <link>https://www.nathancurry.com/blog/22-ansible-pxeboot-vms/</link>
-      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/22-ansible-pxeboot-vms/</guid>
-      <description>I&amp;rsquo;ve completed my basic workflow for for generating a PXE boot environment and deploying VMs. This builds on a few of my previous posts, so I will be omitting some steps.
-See the relevant git commit here.
-Overview The workflow is a collection of roles. Currently, I&amp;rsquo;m calling them on an ad hoc basis, but they&amp;rsquo;re designed to ultimately be called from a single playbook.
-local-repo This is the role for configuring my local repository, which included a preparatory script on the container host.</description>
-    </item>
-    
-    <item>
-      <title>Generate Kickstarts With Ansible</title>
-      <link>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</link>
-      <pubDate>Wed, 12 Sep 2018 20:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/21-generate-kickstarts-with-ansible/</guid>
-      <description>I wanted a way to generate kickstart files so I can easily spin up new VMs. I will also be making use of cloning, but I want to have a PXE boot server at some point as well.
-I&amp;rsquo;ve yet to test a deployment&amp;ndash;and I&amp;rsquo;m sure there&amp;rsquo;s still tweaking to do&amp;ndash;but the workflow is complete.
-You can find the relevant git commit here.
-Overview tasks/ └── make_kickstarts.yml roles/kickstart/ ├── tasks │ └── main.</description>
-    </item>
-    
-    <item>
-      <title>Configuring Time Services With Ansible</title>
-      <link>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</link>
-      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/20-configuring-chrony-with-ansible/</guid>
-      <description>I put together an Ansible role for configuring network time services, using chrony.
-This is my most elegant work thus far, though before this is worth packaging, I&amp;rsquo;d like to configure the scripts to test for Debian vs. Red Hat, as well as add variables for a few things.
-You can take a look at the relevant git commit here.
-Structure Here are the files in this project. A task to call the roles, and a role for master/slave.</description>
-    </item>
-    
-    <item>
-      <title>Ansible Role For Local Repo</title>
-      <link>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</link>
-      <pubDate>Tue, 11 Sep 2018 17:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/19-ansible-role-for-local-repo/</guid>
-      <description>I need a local install source and system I can serve kickstart files from. I wrote an Ansible role to accomplish this. The kickstart process will be covered in the next article.
-Here is the relevant git commit
-Structure files/ # Static files centos7.repo # Sync source local.repo # Repo file for download tasks/ configure_repo.yml # Set up repo in container prepare_host_node.yml # Prepare Proxmox node main.yml # Main script main.</description>
-    </item>
-    
-    <item>
-      <title>Ansible: Deploy DNS/DHCP Failover Pair</title>
+      <title>Ansible Workflow 1: Spin Up DNS/DHCP Failover Pair</title>
       <link>https://www.nathancurry.com/blog/17-ansible-workflow-deploying-dns-dhcp/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -145,7 +37,7 @@ fqdn: &amp;#39;ns.lan.nathancurry.com&amp;#39; ip_address: &amp;#39;10.3.3.2&amp
 Configure Proxmox for ansible I&amp;rsquo;ve been working off morph027&amp;rsquo;s workflow for a first successful run. He uses the ansible plugin proxmox_kvm, and I&amp;rsquo;m using proxmox (for containers).
 Infrastructure Short and sweet:
 [proxmox] gold silver bronze Setup script To get my blood pumping, I wrote a playbook to configure the three nodes:
-# install_pip.</description>
+# install_pip.yml --- - name: &amp;#39;prep proxmox hosts for automation&amp;#39; hosts: &amp;#39;proxmox&amp;#39; gather_facts: false vars: packages: - &amp;#39;python-pip&amp;#39; - &amp;#39;python-dev&amp;#39; - &amp;#39;build-essential&amp;#39; tasks: - name: &amp;#39;install python-apt so native apt plugins work&amp;#39; package: name: &amp;#39;python-apt&amp;#39; state: &amp;#39;present&amp;#39; - name: &amp;#39;switch to community repos&amp;#39; apt_repository: repo: &amp;#39;deb https://enterprise.</description>
     </item>
     
   </channel>

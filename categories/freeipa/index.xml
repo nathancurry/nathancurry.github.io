@@ -1,26 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Freeipa on Nathan Curry</title>
+    <title>freeipa on Nathan Curry</title>
     <link>https://www.nathancurry.com/categories/freeipa/</link>
-    <description>Recent content in Freeipa on Nathan Curry</description>
+    <description>Recent content in freeipa on Nathan Curry</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.nathancurry.com/categories/freeipa/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Setting Up FreeIPA With Ansible</title>
-      <link>https://www.nathancurry.com/blog/25-setting-up-freeipa/</link>
-      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nathancurry.com/blog/25-setting-up-freeipa/</guid>
-      <description>I set up IdM to manage credentials. It&amp;rsquo;s currently a barebones system, but I&amp;rsquo;ll flesh it out as time goes on.
-Install FreeIPA The FreeIPA project makes this incredibly easy as a matter of fact, by providing the ansible-freeipa project. One caveat is that despite saying they support CentOS 7.4+, the replica script requires FreeIPA 4.6, which is not officially available.
-I looked into the possibility of using a Fedora, but after considering pros and cons, I decided to stick with CentOS, and work around this limitation.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nathancurry.com/categories/freeipa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerberized NFS with FreeIPA on CentOS 7 and Fedora 28</title>
       <link>https://www.nathancurry.com/blog/07-kerberized-nfs-with-freeipa-on-centos-7/</link>
