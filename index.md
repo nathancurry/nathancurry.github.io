@@ -15,6 +15,6 @@ I build bounded, local-first AI systems and run them on self-hosted infrastructu
 - **[Compa](https://github.com/lowmagic/compa)** ([engine](https://github.com/lowmagic/compa-engine), [experts](https://github.com/lowmagic/compa-experts)): Go terminal companion for investigating support cases and diagnostic archives, with sandboxed collection, secret redaction, and evidence checks.
 - **[Hypertrace](https://github.com/lowmagic/hypertrace)**: bounded web-research harness with verbatim quote verification, adversarial review, and per-attempt cost accounting.
 
-More tools ([backtalk](https://github.com/lowmagic/backtalk), [chimera-tts](https://github.com/lowmagic/chimera-tts)), architecture notes, and [code standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md) live at **[github.com/lowmagic](https://github.com/lowmagic)**.
+More tools ([prometheus-tsdb-reader](https://github.com/lowmagic/prometheus-tsdb-reader), [backtalk](https://github.com/lowmagic/backtalk), [chimera-tts](https://github.com/lowmagic/chimera-tts)), architecture notes, and [code standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md) live at **[github.com/lowmagic](https://github.com/lowmagic)**.
 
 Red Hat Certified Architect · CompTIA Security+ · Go, Python, Postgres, Kubernetes, OpenShift, AWS
