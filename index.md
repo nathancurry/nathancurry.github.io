@@ -2,12 +2,12 @@
 layout: page
 title: Nathan Curry
 tagline: Applied AI · Forward Deployed Engineering
-description: Nathan Curry builds local-first AI and diagnostic systems in Go and Python. Software Maintenance Engineer at Red Hat.
+description: Nathan Curry builds bounded AI and diagnostic systems in Go and Python. Software Maintenance Engineer at Red Hat.
 ---
 
-I build bounded, local-first AI systems and run them on self-hosted infrastructure. At Red Hat, I'm a Software Maintenance Engineer in the OpenShift Enhanced Solution Support team, where I debug production clusters and built an AI assistant that works live support cases alongside engineers. Before that: Linux security at SAP NS2, escalations at Redis, OpenStack support at Red Hat.
+I build bounded AI systems that keep data on hardware I control and send models only redacted, minimal context. At Red Hat, I'm a Software Maintenance Engineer on the OpenShift Enhanced Solution Support team, debugging production clusters and building an AI assistant that works live support cases alongside engineers. Before that: Linux security at SAP NS2, escalations at Redis, and OpenStack support at Red Hat.
 
-[GitHub](https://github.com/lowmagic) · [LinkedIn](https://www.linkedin.com/in/nathandcurry) · [Email](mailto:nathancurry@gmail.com)
+[GitHub](https://github.com/lowmagic) · [lowmag.cc](https://lowmag.cc) · [LinkedIn](https://www.linkedin.com/in/nathandcurry) · [Email](mailto:nathancurry@gmail.com)
 
 ### Projects
 
@@ -17,4 +17,4 @@ I build bounded, local-first AI systems and run them on self-hosted infrastructu
 
 More tools ([prometheus-tsdb-reader](https://github.com/lowmagic/prometheus-tsdb-reader), [backtalk](https://github.com/lowmagic/backtalk), [chimera-tts](https://github.com/lowmagic/chimera-tts)), architecture notes, and [code standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md) live at **[github.com/lowmagic](https://github.com/lowmagic)**.
 
-Red Hat Certified Architect · CompTIA Security+ · Go, Python, Postgres, Kubernetes, OpenShift, AWS
+Red Hat Certified Engineer · Red Hat Certified OpenShift Administrator · Go, Python, Postgres, Kubernetes, OpenShift, AWS
