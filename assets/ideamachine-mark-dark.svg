@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Idea Machine">
+<line x1="62.85" y1="38.19" x2="65.7" y2="16.37" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="65.7" cy="16.37" r="3.6" fill="#E8E4DA"/>
+<line x1="73.38" y1="42.53" x2="80.67" y2="33.01" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="80.67" cy="33.01" r="2.8" fill="#E8E4DA"/>
+<line x1="80.32" y1="51.56" x2="96.94" y2="44.66" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="96.94" cy="44.66" r="2.8" fill="#E8E4DA"/>
+<line x1="81.81" y1="62.85" x2="89.75" y2="63.89" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="89.75" cy="63.89" r="2.8" fill="#E8E4DA"/>
+<line x1="77.47" y1="73.38" x2="96.52" y2="87.97" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="96.52" cy="87.97" r="3.6" fill="#E8E4DA"/>
+<line x1="68.44" y1="80.32" x2="73.81" y2="93.25" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="73.81" cy="93.25" r="2.8" fill="#E8E4DA"/>
+<line x1="57.15" y1="81.81" x2="54.56" y2="101.65" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="54.56" cy="101.65" r="3.6" fill="#E8E4DA"/>
+<line x1="46.62" y1="77.47" x2="40.54" y2="85.4" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="40.54" cy="85.4" r="2.8" fill="#E8E4DA"/>
+<line x1="39.68" y1="68.44" x2="19.36" y2="76.87" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="19.36" cy="76.87" r="3.6" fill="#E8E4DA"/>
+<line x1="38.19" y1="57.15" x2="26.29" y2="55.59" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="26.29" cy="55.59" r="2.8" fill="#E8E4DA"/>
+<line x1="42.53" y1="46.62" x2="29.83" y2="36.89" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="29.83" cy="36.89" r="2.8" fill="#E8E4DA"/>
+<line x1="51.56" y1="39.68" x2="48.49" y2="32.29" stroke="#E8E4DA" stroke-width="2.5" stroke-linecap="round"/><circle cx="48.49" cy="32.29" r="2.8" fill="#E8E4DA"/>
+<circle cx="60" cy="60" r="21" fill="#FFD15C" fill-opacity="0.08"/>
+<circle cx="60" cy="60" r="15" fill="#FFD15C" fill-opacity="0.2"/>
+<circle cx="60" cy="60" r="9" fill="#FFD15C"/>
+</svg>

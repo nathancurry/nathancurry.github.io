@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nathan Curry — Applied AI &amp; Infrastructure Engineering</title>
+  <meta name="description" content="Nathan Curry builds bounded AI systems and diagnostic tools in Go and Python. OpenShift escalation and root-cause engineering at Red Hat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nathancurry.com/">
+  <meta property="og:title" content="Nathan Curry — Applied AI &amp; Infrastructure Engineering">
+  <meta property="og:description" content="Bounded AI systems and diagnostic tools in Go and Python. OpenShift escalation and root-cause engineering at Red Hat.">
+  <meta property="og:image" content="https://lowmag.cc/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-stripe" aria-hidden="true"></div>
+  <div class="page">
+    <header class="hero">
+      <div class="kicker">
+        <span class="kicker-dot" aria-hidden="true"></span>
+        <span>West Palm Beach, FL &middot; Remote</span>
+      </div>
+      <h1>Nathan Curry</h1>
+      <p class="tagline">Applied AI &middot; Forward Deployed &amp; Infrastructure Engineering</p>
+      <p class="bio">
+        I build <strong>bounded AI systems and diagnostic tools</strong> that keep data on hardware I control and send models only redacted, minimal context. At Red Hat, I do <strong>OpenShift escalation and root-cause engineering</strong>—debugging production Kubernetes clusters and building internal diagnostic AI tooling. Before that: FedRAMP Linux security at SAP NS2, L3 escalations at Redis, and OpenStack support at Red Hat.
+      </p>
+      <nav class="hero-links" aria-label="Primary">
+        <a class="btn-primary" href="https://lowmag.cc">lowmag.cc showcase &rarr;</a>
+        <a class="nav-pill" href="https://github.com/lowmagic">github.com/lowmagic</a>
+        <a class="nav-pill" href="https://www.linkedin.com/in/nathandcurry">LinkedIn</a>
+        <a class="nav-pill" href="mailto:nathancurry@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <section class="section" id="systems">
+      <span class="section-label">01 / Selected Systems</span>
+      <h2>Open-source work at <a href="https://github.com/lowmagic">@lowmagic</a></h2>
+
+      <div class="project-grid">
+        <article class="card">
+          <div>
+            <div class="card-head">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="assets/compa-mark-dark.svg">
+                <img src="assets/compa-mark-light.svg" alt="">
+              </picture>
+              <h3 class="card-title"><a href="https://github.com/lowmagic/compa">compa</a></h3>
+            </div>
+            <p>
+              Go terminal companion (<a href="https://github.com/lowmagic/compa-engine">engine</a>, <a href="https://github.com/lowmagic/compa-experts">experts</a>) for support-case triage over diagnostic archives. Built for smaller, enterprise-hosted, and ZDR models with network-off tool sandboxing, secret redaction, and citation verification.
+            </p>
+          </div>
+          <div class="card-meta">
+            <span>Go &middot; SQLite &middot; ZDR Models</span>
+            <a href="https://github.com/lowmagic/compa">repo &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-head">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="assets/prometheus-tsdb-reader-mark-dark.svg">
+                <img src="assets/prometheus-tsdb-reader-mark-light.svg" alt="">
+              </picture>
+              <h3 class="card-title"><a href="https://github.com/lowmagic/prometheus-tsdb-reader">prometheus-tsdb-reader</a></h3>
+            </div>
+            <p>
+              Static Go CLI and library that answers PromQL offline from captured Prometheus TSDB dumps—replaying WALs in scratch space, salvaging corrupt blocks with gap reporting, and exposing injection-safe typed named queries.
+            </p>
+          </div>
+          <div class="card-meta">
+            <span>Go &middot; PromQL &middot; TSDB/WAL</span>
+            <a href="https://github.com/lowmagic/prometheus-tsdb-reader">repo &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-head">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="assets/ideamachine-mark-dark.svg">
+                <img src="assets/ideamachine-mark-light.svg" alt="">
+              </picture>
+              <h3 class="card-title"><a href="https://github.com/lowmagic/ideamachine">hearsay &rarr; ideamachine</a></h3>
+            </div>
+            <p>
+              Self-hosted speech-to-idea pipeline (<a href="https://github.com/lowmagic/hearsay">hearsay</a>, <a href="https://github.com/lowmagic/corral">corral</a>) transcribing consented audio over Tailscale into content-addressed episodes and a citation-linked map served over restricted Postgres views and MCP.
+            </p>
+          </div>
+          <div class="card-meta">
+            <span>Python &middot; Postgres + pgvector &middot; MCP</span>
+            <a href="https://github.com/lowmagic/ideamachine">repo &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-head">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="assets/hypertrace-mark-dark.svg">
+                <img src="assets/hypertrace-mark-light.svg" alt="">
+              </picture>
+              <h3 class="card-title"><a href="https://github.com/lowmagic/hypertrace">hypertrace</a></h3>
+            </div>
+            <p>
+              Bounded web-research harness where an LLM proposes searches, while deterministic Python code verifies verbatim byte-offset quotes in article bodies, tracks per-attempt cost, and writes <code>Inconclusive</code> when evidence falls short.
+            </p>
+          </div>
+          <div class="card-meta">
+            <span>Python &middot; SQLite &middot; Evals</span>
+            <a href="https://github.com/lowmagic/hypertrace">repo &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="more-row">
+        Interactive walkthroughs, smaller tools (<a href="https://github.com/lowmagic/backtalk">backtalk</a>, <a href="https://lowmag.cc/chimera-tts/">chimera-tts</a>), and org <a href="https://github.com/lowmagic/.github/blob/main/code-standards/README.md">code standards</a> live at <a href="https://lowmag.cc">lowmag.cc</a> and <a href="https://github.com/lowmagic">github.com/lowmagic</a>.
+      </p>
+    </section>
+
+    <section class="section" id="experience">
+      <span class="section-label">02 / Background</span>
+      <h2>Production systems &amp; regulated infrastructure</h2>
+
+      <div class="exp-list">
+        <div class="exp-row">
+          <div class="exp-dates">2024 &ndash; present</div>
+          <div>
+            <div class="exp-role">Red Hat <span>&middot; Software Maintenance Engineer (OpenShift Enhanced Support)</span></div>
+            <p class="exp-summary">
+              Own OpenShift escalations and root-cause investigations under a 15-minute response SLA. Built an engineer-directed diagnostic AI assistant, refactored 22 Red Hat domain skills into deterministic tools with source-verified canonicalization, and built Thunder, a Go terminal UI for live case context.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-row">
+          <div class="exp-dates">2022 &ndash; 2024</div>
+          <div>
+            <div class="exp-role">SAP NS2 <span>&middot; Linux Security Specialist</span></div>
+            <p class="exp-summary">
+              Technical lead for Linux security and DISA STIG compliance across AWS GovCloud FedRAMP environments. Built CI/CD-distributed Ansible and Python OpenSCAP/eMASS pipelines cutting manual compliance work by &gt;50% and meeting the baseline for a $1B federal contract renewal.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-row">
+          <div class="exp-dates">2021 &ndash; 2022</div>
+          <div>
+            <div class="exp-role">Redis <span>&middot; Technical Support Engineer</span></div>
+            <p class="exp-summary">
+              L3 escalation point for Redis Enterprise on Linux and Kubernetes; isolated a critical banking mTLS renewal failure and built deterministic Docker reproduction tooling for a Kubernetes Operator cluster-sync race condition.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-row">
+          <div class="exp-dates">2018 &ndash; 2021</div>
+          <div>
+            <div class="exp-role">Red Hat <span>&middot; Senior Technical Support Engineer (OpenStack Enhanced Support)</span></div>
+            <p class="exp-summary">
+              Escalations for telco NFV production clouds (SR-IOV, NUMA, OVS-DPDK, SDN) under a 15-minute response SLA, tracing TripleO regressions to source across Python, Heat, and Ansible. Promoted twice in two years.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="credentials">
+      <span class="section-label">03 / Credentials &amp; Stack</span>
+      <h2>Certifications &amp; tools</h2>
+
+      <div class="cred-box">
+        <p class="cred-line">
+          <strong>Current Red Hat Certifications:</strong> Red Hat Certified Engineer (Enterprise Linux &amp; Ansible) &middot; OpenShift Administrator &middot; Developer in Cloud-native Applications &middot; Specialist in Containers
+        </p>
+        <p class="cred-line">
+          <strong>Previously Held:</strong> Red Hat Certified Architect (RHCA) &middot; CompTIA Security+ &middot; HashiCorp Terraform Associate &middot; DoD Public Trust
+        </p>
+        <div class="tag-row" aria-label="Core stack">
+          <span class="tag">Python</span>
+          <span class="tag">Go</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">OpenShift</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Prometheus</span>
+          <span class="tag">Postgres + pgvector</span>
+          <span class="tag">Ansible</span>
+          <span class="tag">FedRAMP / STIG</span>
+          <span class="tag">AWS GovCloud</span>
+          <span class="tag">MCP</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>English (native) &middot; Spanish (fluent)</span>
+      <span><a href="https://lowmag.cc">lowmag.cc</a> &middot; <a href="https://github.com/lowmagic">github.com/lowmagic</a> &middot; <a href="https://www.linkedin.com/in/nathandcurry">linkedin</a></span>
+    </footer>
+  </div>
+</body>
+</html>

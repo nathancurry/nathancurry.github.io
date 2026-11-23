@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="prometheus-tsdb-reader">
+<defs>
+<mask id="tsdb-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+<rect width="120" height="120" fill="#fff"/>
+<polyline points="4,74 18,70 30,78 42,56 54,62 66,44 78,52 90,36 102,46" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="102" cy="46" r="8.5" fill="#000"/>
+</mask>
+<clipPath id="tsdb-gap"><rect x="38" y="0" width="44" height="120"/></clipPath>
+</defs>
+<g mask="url(#tsdb-cut)">
+<rect x="6" y="28" width="32" height="64" rx="7" fill="#1A1918"/>
+<rect x="82" y="28" width="32" height="64" rx="7" fill="#1A1918"/>
+</g>
+<polyline clip-path="url(#tsdb-gap)" points="4,74 18,70 30,78 42,56 54,62 66,44 78,52 90,36 102,46" fill="none" stroke="#1A1918" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="102" cy="46" r="7" fill="#1D6FD8"/>
+</svg>
