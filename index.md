@@ -2,10 +2,10 @@
 layout: page
 title: Nathan Curry
 tagline: Applied AI · Forward Deployed Engineering
-description: Nathan Curry builds bounded AI and diagnostic systems in Go and Python. Software Maintenance Engineer at Red Hat.
+description: Nathan Curry builds bounded AI and diagnostic systems in Go and Python. OpenShift escalation and root-cause engineering at Red Hat.
 ---
 
-I build bounded AI systems that keep data on hardware I control and send models only redacted, minimal context. At Red Hat, I'm a Software Maintenance Engineer on the OpenShift Enhanced Solution Support team, debugging production clusters and building an AI assistant that works live support cases alongside engineers. Before that: Linux security at SAP NS2, escalations at Redis, and OpenStack support at Red Hat.
+I build bounded AI systems that keep data on hardware I control and send models only redacted, minimal context. At Red Hat, I do OpenShift escalation and root-cause engineering—debugging production clusters and building an AI assistant that works live support cases alongside engineers. Before that: Linux security at SAP NS2, escalations at Redis, and OpenStack support at Red Hat.
 
 [GitHub](https://github.com/lowmagic) · [lowmag.cc](https://lowmag.cc) · [LinkedIn](https://www.linkedin.com/in/nathandcurry) · [Email](mailto:nathancurry@gmail.com)
 
